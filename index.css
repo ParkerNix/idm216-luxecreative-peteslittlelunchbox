@@ -1,1 +1,67 @@
-test
+* { 
+	box-sizing: border-box;
+}
+
+ 
+html {
+    font-size: 100%;
+}
+
+
+@font-face {
+    font-family: 'BohemianSoul-Regular';
+    src: url('/fonts/BohemianSoul-Regular.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium.woff';
+    src: url('/fonts/Gilroy-Medium.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #0D2C43;
+}
+
+h1 {
+    font-family: 'BohemianSoul-Regular';
+    color: #D99D90;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'BohemianSoul-Regular';
+    color: #E5D0CB;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Gilroy-Medium';
+    color: #E5D0CB;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    
+}
+
+h4 {
+    font-family: 'Gilroy-Medium';
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    color: #F38066;
+    font-size: 18px;
+    margin-top: -1rem;
+}
+
+h5 {
+    font-family: 'Gilroy-Medium';
+    color: #E5D0CB;
+    font-size: 17px;
+    margin-top: -1rem;
+}
