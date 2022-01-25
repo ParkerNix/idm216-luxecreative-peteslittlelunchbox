@@ -82,13 +82,17 @@ ul {
     line-height: 1.5rem;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .page_container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-left: 4rem;
-    margin-right: 4rem; */
+    width: 49.625rem;
 }
 
 .header {
@@ -98,6 +102,7 @@ ul {
     align-items: center;
     flex-direction: column;
 }
+
 
 .header img {
 padding-bottom: 3rem;
@@ -109,8 +114,18 @@ width: 60%;
     padding-bottom: 2rem;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.875rem;
+    gap: 1.875rem;
+}
+
 .persona_images img {
-    width: 40%;
+    width: 298px;
 }
 
 .journey_map img {
