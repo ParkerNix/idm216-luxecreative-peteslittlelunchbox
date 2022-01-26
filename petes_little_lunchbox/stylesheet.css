@@ -29,18 +29,9 @@ body {
 h1 {
     font-family: 'BohemianSoul-Regular';
     color: #D99D90;
-    font-weight: lighter;
-<<<<<<< Updated upstream
-    font-size: 2.5rem;
-=======
-<<<<<<< HEAD
     font-weight: 100;
     letter-spacing: 1px;
     font-size: 32px;
-=======
-    font-size: 2.5rem;
->>>>>>> 91e805ffd01128577ee1e84e6160648d4dee6e25
->>>>>>> Stashed changes
 }
 
 h2 {
@@ -51,10 +42,7 @@ h2 {
     letter-spacing: 1px;
     font-size: 32px;
 }
-<<<<<<< Updated upstream
 
-=======
-<<<<<<< HEAD
 h2:after {
     background-color: #D99D90;
     content: "";
@@ -65,10 +53,7 @@ h2:after {
     width: 10rem;
     margin-left: 15px;
   }
-=======
 
->>>>>>> 91e805ffd01128577ee1e84e6160648d4dee6e25
->>>>>>> Stashed changes
 h3 {
     /* font-family: 'Gilroy-Medium'; */
     font-family: 'BohemianSoul-Regular';
@@ -136,15 +121,7 @@ padding-bottom: 3rem;
 width: 60%;
 }
 
-<<<<<<< Updated upstream
-.header h2 {
-=======
-<<<<<<< HEAD
 .header h1 {
-=======
-.header h2 {
->>>>>>> 91e805ffd01128577ee1e84e6160648d4dee6e25
->>>>>>> Stashed changes
     margin-top: -2.5rem;
     padding-bottom: 2rem;
 }
