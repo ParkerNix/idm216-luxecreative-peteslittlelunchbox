@@ -16,7 +16,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium.woff';
+    font-family: 'Gilroy-Medium';
     src: url('fonts/Gilroy-Medium.woff') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -80,9 +80,27 @@ li {
     margin-bottom: .7rem;
 }
 
+button {
+    background-color: #c78b7e;
+    font-family: 'BohemianSoul-Regular';
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 10rem;
+    border: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #af7467;
+}
+
 .wrapper {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
 }
 
 .page_container {
@@ -114,8 +132,7 @@ padding-bottom: 3rem;
 }
 
 .himage {
-    max-width: 482.06px;
-    width: 87%;
+    width: 85%;
 }
 
 .header h1 {
@@ -133,6 +150,19 @@ padding-bottom: 3rem;
     gap: 1.875rem;
 }
 
+.section_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+}
+
+.section img, .section_crit img, .section_map img {
+    width: 100%;
+}
+
 .section_crit {
     display: flex;
     justify-content: center;
@@ -143,9 +173,32 @@ padding-bottom: 3rem;
     gap: 1.875rem;
 }
 
+.pdf {
+    display: flex;
+    justify-content: center;
+}
 
-.persona_images img {
-    width: 320px;
+.mood {
+    border-radius: 1rem;
+}
+
+.persona_images {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.section_crit img {
+    max-width: 450px;
+}
+
+
+.persona1 {
+    width: 700px;
+}
+
+.persona2 {
+    width: 545px;
 }
 
 .journey_map img, .styles img {
@@ -156,6 +209,10 @@ padding-bottom: 3rem;
     width: 193.5px;
     padding-top: 2rem;
     padding-bottom: 1rem;
+}
+
+.flow {
+    border-radius: 10px;
 }
 
 @media (max-width: 697px) {
@@ -205,6 +262,24 @@ padding-bottom: 3rem;
 
     .header h1 {
         text-align: center;
+    }
+
+    .critical_path img {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .persona1 {
+        width: 100%;
+    }
+    
+    .persona2 {
+        width: 87%;
+    }
+
+    .persona_images {
+        gap: 3rem;
     }
     
 }
