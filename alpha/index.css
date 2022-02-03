@@ -95,3 +95,18 @@ button {
     cursor: pointer;
 }
 
+.nav {
+    display:flex;
+    padding-top: 1rem;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.nav h2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
