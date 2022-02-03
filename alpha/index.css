@@ -143,6 +143,7 @@ button.tip {
     display: flex; 
     padding-top: 1rem;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .continue_shopping:visited {
@@ -230,5 +231,14 @@ button.tip {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.cobutton {
+    padding-top: 3rem;
+    padding-right: 2rem;
+}
+
+button.checkout {
+    float: right;
 }
 
