@@ -123,7 +123,7 @@ button.edit, button.remove {
     border: 1.5px solid #899BC7;
     color: #899BC7; 
     border-radius: 5px;
-    padding: .1rem 0.6rem;
+    padding: .1rem 0.7rem;
 }
 
 button.tip {
@@ -167,11 +167,12 @@ button.tip {
     font-family: "Gilroy-Bold";
     border: none;
     padding: .5rem 0.8rem;
+    margin: 0 0 0 1rem;
 }
 
 .itemimg img {
-    width: 95px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
 }
 
 .addons {
@@ -184,13 +185,17 @@ button.tip {
 
 .itemdesc {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+}
+
+.title {
+    width: 147px;
 }
 
 .itembuttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     gap: 1rem;
     padding-top: 1rem; 
