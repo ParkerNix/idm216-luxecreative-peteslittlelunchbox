@@ -119,10 +119,11 @@ button {
 button.edit, button.remove {
     background-color: #FFFFFF;
     font-family: 'Gilroy-Bold';
+    font-size: 12px;
     border: 1.5px solid #899BC7;
     color: #899BC7; 
     border-radius: 5px;
-    padding: .4rem 1.2rem;
+    padding: .1rem 0.6rem;
 }
 
 button.tip {
@@ -184,12 +185,17 @@ button.tip {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding: 1rem;
 }
+
+
 
 .itembuttons {
     display: flex;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem; 
 }
 
 .cartitem {
