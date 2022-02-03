@@ -28,44 +28,46 @@ html {
 }
 
 h1 {
-    font-family: 'BohemianSoul-Regular';
-    color: #D99D90;
+    font-family: 'Gilroy-ExtraBold';
+    color: #4B5079;
     font-weight: 100;
     letter-spacing: 1px;
-    font-size: 32px;
+    font-size: 24px;
 }
+
 
 h2 {
-    font-family: 'BohemianSoul-Regular';
-    /* color: #E5D0CB; */
-    color: #D99D90;
+    font-family: 'Gilroy-ExtraBold';
+    color: #4B5079;
     font-weight: 100;
     letter-spacing: 1px;
-    font-size: 32px;
-    margin: 3rem 0 1rem;
+    font-size: 16px;
 }
 
-h2:after {
-    background-color: #D99D90;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 15rem;
-    margin-left: 15px;
-    bottom: 4px;
-  }
-
 h3 {
-    /* font-family: 'Gilroy-Medium'; */
-    font-family: 'BohemianSoul-Regular';
-    color: #E5D0CB;
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
     font-weight: 100;
-    font-size: 24px;
-    letter-spacing: 2px;
-    margin: 0;
-    
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* button text */
+
+h5 {
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 p, ul {
