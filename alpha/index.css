@@ -119,21 +119,81 @@ button {
 button.edit, button.remove {
     background-color: #FFFFFF;
     font-family: 'Gilroy-Bold';
-    border: 1px solid #899BC7;
+    border: 1.5px solid #899BC7;
     color: #899BC7; 
-    border-radius: 10px;
-    padding: .5rem 1.2rem;
+    border-radius: 5px;
+    padding: .4rem 1.2rem;
+}
 
+button.tip {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy-Bold';
+    border: 1.5px solid #899BC7;
+    color: #899BC7; 
+    border-radius: 5px;
+    padding: .4rem 1.2rem;
 }
 
 .continue_shopping  {
     font-family:"Gilroy-Bold";
     color: #899BC7;
     font-size: 14px;
+    display: flex; 
+    padding-top: 1rem;
+    justify-content: center;
 }
 
 .continue_shopping:visited {
     font-family:"Gilroy-Bold";
     color: #899BC7;
     font-size: 14px;
+}
+
+.coupon_code {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy-Medium';
+    border: 1.5px solid #899BC7;
+    color: #899BC7; 
+    border-radius: 5px;
+    padding: .5rem 1.2rem;
+}
+
+.qty {
+    border-radius: 5px;
+    background-color: #E9F2FF;
+    color: #4B5079;
+    font-family: "Gilroy-Bold";
+    border: none;
+    padding: .5rem 0.8rem;
+}
+
+.itemimg img {
+    width: 95px;
+    height: 95px;
+}
+
+.addons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.itemdesc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.itembuttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+}
+
+.cartitem {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
 }
