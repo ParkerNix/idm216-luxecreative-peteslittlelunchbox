@@ -7,6 +7,90 @@ html {
     font-size: 100%;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-ExtraBold.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'BohemianSoul-Regular';
+    color: #D99D90;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'BohemianSoul-Regular';
+    /* color: #E5D0CB; */
+    color: #D99D90;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 32px;
+    margin: 3rem 0 1rem;
+}
+
+h2:after {
+    background-color: #D99D90;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 15rem;
+    margin-left: 15px;
+    bottom: 4px;
+  }
+
+h3 {
+    /* font-family: 'Gilroy-Medium'; */
+    font-family: 'BohemianSoul-Regular';
+    color: #E5D0CB;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0;
+    
+}
+
+p, ul {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin: .3rem 0 1rem;
+
+}
+
+li {
+    margin-bottom: .7rem;
+}
+
 button {
     background-color: #FF746B;
+    font-family: 'Gilroy-Bold';
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 10rem;
+    border: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
 }
+
