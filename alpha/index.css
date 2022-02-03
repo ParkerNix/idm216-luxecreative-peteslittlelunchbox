@@ -128,11 +128,12 @@ button.edit, button.remove {
 
 button.tip {
     background-color: #FFFFFF;
+    font-size: 12px;
     font-family: 'Gilroy-Bold';
     border: 1.5px solid #899BC7;
     color: #899BC7; 
     border-radius: 5px;
-    padding: .4rem 1.2rem;
+    padding: .4rem 0.8rem;
 }
 
 .continue_shopping  {
@@ -185,10 +186,7 @@ button.tip {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 1rem;
 }
-
-
 
 .itembuttons {
     display: flex;
@@ -203,3 +201,34 @@ button.tip {
     justify-content: center;
     flex-direction: row; 
 }
+
+.cart {
+    padding-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.total_price {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding-top: 0.5rem;
+}
+
+
+.total {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tips {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
