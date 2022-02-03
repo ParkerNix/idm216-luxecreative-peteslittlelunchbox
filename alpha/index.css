@@ -110,3 +110,30 @@ button {
     align-items: center;
 }
 
+
+
+
+
+/* Cart Page */
+
+button.edit, button.remove {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy-Bold';
+    border: 1px solid #899BC7;
+    color: #899BC7; 
+    border-radius: 10px;
+    padding: .5rem 1.2rem;
+
+}
+
+.continue_shopping  {
+    font-family:"Gilroy-Bold";
+    color: #899BC7;
+    font-size: 14px;
+}
+
+.continue_shopping:visited {
+    font-family:"Gilroy-Bold";
+    color: #899BC7;
+    font-size: 14px;
+}
