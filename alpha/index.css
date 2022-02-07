@@ -247,3 +247,108 @@ button.checkout {
     float: right;
 }
 
+
+
+
+
+
+
+
+
+/* LOG IN PAGE */
+
+.logincontainer {
+    margin-top: 3rem;
+    background-color: #E9F2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4.petes {
+    color: #FF746B;
+    text-align: center;
+    font-size: 0.938rem;
+    text-shadow: 2px 2px 1px #41275215;
+}
+
+h2.welcome {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px #41275215;
+    margin-top: -1rem;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+}
+
+#uname, #psw {
+    width: 15rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px; 
+}
+
+#uname, #psw {
+    font-family: 'Gilroy-Medium';
+    color: #777CAB;
+    font-size: 0.75rem
+}
+
+#login {
+    font-family: 'Gilroy-Bold';
+    color: #777CAB;
+    font-size: 0.75rem
+}
+
+#loginbutton {
+    margin-top: 1rem;
+    width: 4.75rem;
+    font-size:0.75rem;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.psw {
+    font-family: 'Gilroy-Medium';
+    text-align: right;
+    font-size: 0.75rem;
+    color: #4B5079;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+.loginlink {
+    font-family: 'Gilroy-Medium';
+    text-align: center;
+    font-size: 0.75rem;
+    color: #777CAB;
+    padding-top: 2rem;
+}
+
+.loginlink a {
+    font-weight: 700;
+}
+
+.loginlink a:visited {
+    font-weight: 700;
+    color: #4B5079;
+}
+
+
+b.login {
+    text-align: center;
+    font-weight: 800;
+}
+
+.login-lunchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
