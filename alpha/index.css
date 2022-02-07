@@ -4,6 +4,13 @@
 
 html {
     font-size: 100%;
+    height: 100vh;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 @font-face {
@@ -259,7 +266,6 @@ button.checkout {
 
 .logincontainer {
     margin-top: 3rem;
-    background-color: #E9F2FF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,8 +313,10 @@ h2.welcome {
 
 #loginbutton {
     margin-top: 1rem;
+    padding: .5rem 1rem;
     width: 4.75rem;
     font-size:0.75rem;
+    font-weight: bold;
     border-radius: 5px;
     align-self: center;
 }
@@ -317,7 +325,7 @@ h2.welcome {
     font-family: 'Gilroy-Medium';
     text-align: right;
     font-size: 0.75rem;
-    color: #4B5079;
+    color: #777CAB;
     text-decoration: underline;
     padding-top: 1rem;
 }
