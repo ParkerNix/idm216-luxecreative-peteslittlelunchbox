@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edit Item | Pete's Little Lunch Box</title>
+</head>
+
+<body style="background-color: #FFFFFF;">
+
+    <div class="nav">
+        <!-- <i class="fa fa-bars" style="font-size:30px;color:#4B5079"></i> -->
+        <!-- Add Back arrow -->
+        <h2 class="nav">Edit Item</h2>
+    </div>
+
+<div class="menu-item-img">
+    <img src="images/cheesestake_edit_item_2x.png" alt="cheesestake">
+</div>
+
+<div class="menu-item-description">
+    <h1>Cheesestake</h1>
+    <p>Thinly sliced beef on a bread of your choice topped with cheese.</p>
+</div>
+    <div class="filter">
+        <div class="quantity-dropdown">
+        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 14px;">Quantity</h4>
+            <div class="itembuttons">
+                <select name="qty" class="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <p class="filter"><u>CLEAR SELECTED</u></p>
+    </div>
+
+    <div class="menu-item-list">
+        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1rem;">Bread</h4>
+        <div class="radio-buttons">
+            <input type="radio" id="hoagie" name="bread" value="hoagie">
+            <label for="hoagie">Hoagie</label><br>
+            <hr class="menu">
+            <input type="radio" id="wrap" name="bread" value="wrap">
+            <label for="wrap">Wrap</label><br>
+            <hr class="menu">
+            <input type="radio" id="pita" name="bread" value="pita">
+            <label for="pita">Pita</label><br>
+            <hr class="menu">
+        </div>
+
+        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1rem;">Toppings</h4>
+        <div class="toppings-checklist">
+            <input type="checkbox" id="salt" name="salt" value="salt">
+            <label for="salt"> Salt</label><br>
+            <hr class="menu">
+            <input type="checkbox" id="pepper" name="pepper" value="pepper">
+            <label for="pepper"> Pepper</label><br>
+            <hr class="menu">
+            <input type="checkbox" id="ketchup" name="ketchup" value="ketchup">
+            <label for="ketchup"> Ketchup</label><br>
+            <hr class="menu">
+            <input type="checkbox" id="onions" name="onions" value="onions">
+            <label for="ketchup"> Onions</label><br>
+        </div>
+    </div>
+
+    <div class="additional-notes">
+    <h3>Additional Notes</h3>
+    </div>
+
+    <div class="additional-notes-box">
+        <textarea id="additional-notes" name="additional-notes" rows="5" cols="38">
+        </textarea>
+    </div>
+
+    <div class="add-to-cart">
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+
+</body>
+</html>

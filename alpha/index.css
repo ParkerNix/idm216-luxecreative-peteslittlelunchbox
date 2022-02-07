@@ -77,18 +77,14 @@ h5 {
     letter-spacing: 1px;
 }
 
-p, ul {
+p {
     font-family: 'Gilroy-Medium';
-    font-size: 18px;
-    color: #ffffff;
-    line-height: 1.8;
-    margin: .3rem 0 1rem;
-
+    font-size: 12px;
+    color: #4B5079;
+    line-height: 1.2rem;
+    /* margin: .3rem 0 1rem; */
 }
 
-li {
-    margin-bottom: .7rem;
-}
 
 button {
     background-color: #FF746B;
@@ -468,3 +464,122 @@ button.pay h4 {
     align-items: center;
 }
 
+
+
+
+
+
+
+
+/* Edit Menu Item */
+
+.menu-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item-img img {
+/* width: 23.438rem; */
+    height: 100%;
+    width: 100%; 
+    object-fit: contain
+}
+
+.menu-item-description {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 1.5rem;
+}
+
+.quantity-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.quantity-dropdown .itembuttons {
+    margin-top: -1rem;
+}
+
+p.filter {
+    color: #899BC7;
+    margin-right: -1rem;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #4B5079;
+    font-family:"Gilroy-Bold";
+    letter-spacing: 0.5px;
+}
+
+input[type="radio"] {
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #4B5079;
+    width: 0.7em;
+    height: 0.7em;
+    border: 1px solid #4B5079;
+    border-radius: 50%;
+}
+
+.radio-buttons, .toppings-checklist {
+    padding-left: 2rem;
+    margin-top: -0.2rem;
+}
+
+hr.menu { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #EDF0F4;
+    border: none;
+    height: 1px;
+    text-align: center;
+    transform: translateX(-1rem);
+}
+
+.menu-item-list h4 {
+    padding-left: 1.5rem;
+}
+
+button.add-to-cart {
+    float: right;
+    margin-right: 2rem;
+    position: sticky;
+    bottom: 0;
+}
+
+.additional-notes-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.additional-notes h3 {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-size: 18px;
+}
+
+
+#additional-notes {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid #DCE0E4;
+}
+
+  
