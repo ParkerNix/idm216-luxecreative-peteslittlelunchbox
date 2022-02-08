@@ -479,6 +479,7 @@ button.pay h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .menu-item-img img {
@@ -557,10 +558,10 @@ hr.menu {
 }
 
 button.add-to-cart {
-    float: right;
-    margin-right: 2rem;
-    position: sticky;
+    margin: 0 2rem 2rem 0;
+    position: fixed;
     bottom: 0;
+    right: 0;
 }
 
 .additional-notes-box {
@@ -568,6 +569,7 @@ button.add-to-cart {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 
 .additional-notes h3 {
@@ -582,6 +584,7 @@ button.add-to-cart {
     margin-left: 2rem;
     margin-right: 2rem;
     border: 1px solid #DCE0E4;
+    width: 75%;
 }
 
 /* Track Order Page */
