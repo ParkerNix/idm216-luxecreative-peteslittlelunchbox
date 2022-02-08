@@ -584,5 +584,44 @@ button.add-to-cart {
     border: 1px solid #DCE0E4;
 }
 
+/* Track Order Page */
 
+.location-banner {
+    text-align: center;
+    background-color: #899BC7;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
   
+.lunchbox-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-top: 2rem;
+}
+
+.tracking-meter {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.thank-you-text {
+text-align: center;
+padding-bottom: 2rem;
+}
+
+.tracking-text {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #41275215;
+}
