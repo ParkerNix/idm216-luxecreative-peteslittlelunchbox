@@ -85,6 +85,13 @@ p {
     /* margin: .3rem 0 1rem; */
 }
 
+a {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    color: #899BC7;
+    /* margin: .3rem 0 1rem; */
+}
+
 
 button {
     background-color: #FF746B;
@@ -696,4 +703,57 @@ button.issue h4 {
 h4#issue {
     margin: 0;
     padding-bottom: 0.5rem;
+}
+
+/*Menu*/
+.ordertime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.now h4, .now p {
+    margin: 0;
+}
+
+.now {
+    width: 80px;
+    text-align: center;
+}
+
+.sectionhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.scrollmenu {
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+    border-style: none none solid none;
+    border-color: #EDF0F4;
+    border-width: 0 0 2px 0;
+}
+
+.emptybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emptybox p {
+    text-align: center;
+}
+
+.emptybox img {
+    width: 89px;
+}
+
+.menu {
+    margin-bottom: 1rem;
 }
