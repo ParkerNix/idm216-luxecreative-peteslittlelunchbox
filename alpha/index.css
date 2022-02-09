@@ -755,5 +755,21 @@ h4#issue {
 }
 
 .menu {
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+/*lunch*/
+.lunchitems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lunchhead {
+    display: flex;
+    background-color: #F2F7FF;
+    height: 117px;
+    justify-content: center;
+    align-items: center;
 }
