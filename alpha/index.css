@@ -296,7 +296,7 @@ button.tip {
     display: flex; 
     padding-top: 1rem;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .continue_shopping:visited {
@@ -345,13 +345,15 @@ button.tip {
 
 .title {
     width: 147px;
+    margin-left: 1rem;
 }
 
 .itembuttons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin-left: 1rem;
     padding-top: 1rem; 
 }
 
@@ -359,6 +361,7 @@ button.tip {
     display: flex;
     justify-content: center;
     flex-direction: row; 
+    padding-top: 1rem;
 }
 
 .cart {
@@ -367,14 +370,16 @@ button.tip {
 
 .price {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
+    gap: 10rem;
     flex-direction: row;
 }
 
 .total_price {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     flex-direction: row;
+    gap: 12rem;
     padding-top: 0.5rem;
 }
 
@@ -387,7 +392,8 @@ button.tip {
 .tips {
     padding-top: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
     flex-direction: row;
 }
 
@@ -400,8 +406,13 @@ button.checkout {
     float: right;
 }
 
+.cobutton {
+    padding-bottom: 2rem;
+}
 
-
+.code {
+    padding-left: 2rem;
+}
 
 
 
@@ -531,6 +542,7 @@ h2.nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3.5rem;
 }
 
 .pickup-card {
@@ -746,15 +758,15 @@ button.add-to-cart {
 .location-banner {
     text-align: center;
     background-color: #899BC7;
-    padding: 0.3rem;
-    margin-top: 1rem;
+    padding: 0.15rem;
+    margin-top: -1rem;
 }
   
 .lunchbox-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-top: 2rem;
 }
 
