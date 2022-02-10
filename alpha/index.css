@@ -220,7 +220,7 @@ button {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  height: 100vh;
+  height: 110vh;
   background: #E9F2FF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -460,6 +460,34 @@ hr.menu2 {
     margin: 0 0 0 8rem;
 }
 
+.price1 {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    flex-direction: column;
+}
+
+.price1 h3, .price2 h3 {
+    margin-top: -0.05rem;
+}
+.price2 {
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    flex-direction: column;
+}
+
+.test {
+    padding-top: 19rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cobutton {
+    display: flex;
+    justify-content: right;
+}
 
 
 /* LOG IN PAGE */
