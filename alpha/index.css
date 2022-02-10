@@ -289,6 +289,25 @@ button.checkout:active {
 
 
 
+
+
+
+/* About Page */
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.about_img h1 {
+    padding-top: 2rem;
+}
+
+
+
 /* Cart Page */
 
 button.edit, button.remove, button.tip {
