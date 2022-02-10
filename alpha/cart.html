@@ -9,8 +9,27 @@
     <title>Cart | Pete's Little Lunch Box</title>
 </head>
 <body>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+         
+          <input type="checkbox">
+          
+          <!--Hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+           <a href="#"><li>ABOUT</li></a>
+            <a href="menu.html"><li>MENU</li></a>
+            <a href="#"><li>ACCOUNT</li></a>
+          </ul>
+        </div>
+      </nav>
+      
     <div class="nav">
-        <i class="fa fa-bars" style="font-size:30px;color:#4B5079"></i>
+        <span style="width: 10px;"></span>
         <h2>Review Order</h2>
         <img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon" style="width:30px; height:23px">
     </div>
@@ -25,7 +44,7 @@
                     <h3>$6.00</h3>
                 </div>
                 <div class="itembuttons">
-                    <button class="edit">EDIT</button>
+                    <button class="edit" onclick="location.href='edit_item.html'">EDIT</button>
                     <button class="remove">REMOVE</button>
                     <select name="qty" class="qty">
                         <option value="1">1</option>
@@ -87,7 +106,7 @@
                 <button class="tip">20%</button>
             </div>
             <div class="tip">
-                <button class="tip">Custom Tip</button>
+                <button class="tip" style="width: 120px; padding: .4rem 0;">Custom Tip</button>
             </div>
         </div>
         <div class="total_price">
@@ -95,10 +114,16 @@
             <h3>$6.00</h3>
         </div>
     </div>
+
+    <div class="code">
     <h2>Add Coupon Code</h2>
     <input class="coupon_code" type="text" placeholder="code"></input>
+    </div>
+
     <div class="cobutton">
-        <button class="checkout">Checkout</button>
+        <a href="log_in.html" class="redhover">
+        <button class="checkout redhover">Checkout</button>
+        </a>
     </div>
 </body>
 </html>

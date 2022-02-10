@@ -9,11 +9,28 @@
     <title>Track Order | Pete's Little Lunch Box</title>
 </head>
 <body style="background-color: #F8FAFF;">
-
-    <div class="nav">
-        <!-- <i class="fa fa-bars" style="font-size:30px;color:#4B5079"></i> -->
-        <!-- Add Back arrow -->
-        <h2 class="nav">Track Order</h2>
+    <nav role="navigation">
+        <div id="menuToggle">
+         
+          <input type="checkbox" />
+          
+          <!--Hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="menu.html"><li>ABOUT</li></a>
+            <a href="#"><li>MENU</li></a>
+            <a href="#"><li>ACCOUNT</li></a>
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="nav">
+        <span style="width: 10px;"></span>
+        <h2>Track Order</h2>
+        <img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon" style="width:30px; height:23px">
     </div>
 
     <div class="location-banner">
@@ -26,7 +43,7 @@
 
     <div class="tracking-meter">
         <h3>ORDER READY FOR PICKUP</h3>
-            <!-- Tracking meter -->
+        <img src="images/progress.png" alt="progress bar" style="width: 294px; height: 20px;">
     </div>
     
     <div class="thank-you-text">
@@ -37,12 +54,12 @@
     <div class="tracking-text">
         <h3>ESTIMATED PICKUP TIME</h3>
         <h1 style="font-size:30px;">12:00PM</h1>
-        <button class="details"><h4 style="color: #ffffff;">VIEW ORDER DETAILS</h4></button>
+        <button class="details redhover"><a href="order_details.html"><h4 style="color: #ffffff;">VIEW ORDER DETAILS</h4></a></button>
     </div>
 
     <div class="issues">
         <h4 id="issue" style="color: #777CAB; font-family:'Gilroy-Bold';">HAVE AN ISSUE?</h4>
-        <button class="issue"><h4 style="color: #ffffff;">CONTACT TRUCK</h4></button>
+        <button class="issue redhover"><h4 style="color: #ffffff;">CONTACT TRUCK</h4></button>
 
     </div>
 
