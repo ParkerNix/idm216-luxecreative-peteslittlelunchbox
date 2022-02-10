@@ -416,6 +416,49 @@ button.checkout {
 
 
 
+/* ORDER DETAILS */
+
+.orderdetails {
+    padding-left: 2rem;
+}
+
+.orderdetails h3 {
+    margin-bottom: -0.7rem;
+}
+
+h3.name {
+    width: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+hr.menu2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #EDF0F4;
+    border: none;
+    height: 1px;
+    text-align: center;
+}
+
+.cartitem2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 0.5rem;
+}
+
+.qty2 {
+    border-radius: 5px;
+    background-color: #E9F2FF;
+    color: #4B5079;
+    font-family: "Gilroy-Bold";
+    border: none;
+    padding: 0.3rem 0.8rem;
+    margin: 0 0 0 8rem;
+}
 
 
 
@@ -753,6 +796,11 @@ button.add-to-cart {
     width: 75%;
 }
 
+
+
+
+
+
 /* Track Order Page */
 
 .location-banner {
@@ -864,6 +912,15 @@ h4#issue {
     padding-bottom: 0.5rem;
 }
 
+
+
+
+
+
+
+
+
+
 /*Menu*/
 .ordertime {
     display: flex;
@@ -916,6 +973,9 @@ h4#issue {
 .menu {
     margin: 0 1rem 1rem;
 }
+
+
+
 
 /*lunch*/
 .lunchitems {
