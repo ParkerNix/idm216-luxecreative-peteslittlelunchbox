@@ -109,14 +109,17 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #FF9E98;
+button.redhover {
+    background-color: #FF746B;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
 }
-
-button:active {
+button.redhover:hover {
+    background-color: #ff9e98;
+}
+button.checkout:active {
     background-color: #E85454;
 }
-
 
 /* HAMBURGER */
 
@@ -940,14 +943,6 @@ h4#issue {
     margin: 0;
     padding-bottom: 0.5rem;
 }
-
-
-
-
-
-
-
-
 
 
 /*Menu*/
