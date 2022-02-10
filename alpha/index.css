@@ -358,7 +358,7 @@ input.coupon_code {
     flex-direction: row;
     gap: 0.5rem;
     margin-left: 1rem;
-    padding-top: 1rem; 
+    padding-top: 0.5rem; 
 }
 
 .cartitem {
@@ -403,7 +403,7 @@ input.coupon_code {
 
 .cobutton {
     padding-top: 3rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 button.checkout {
@@ -415,7 +415,12 @@ button.checkout {
 }
 
 .code {
-    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 1rem;
+    padding-left: 2.4rem;
+    padding-right: 6rem;
 }
 
 
@@ -497,7 +502,7 @@ hr.menu2 {
 /* LOG IN PAGE */
 
 .logincontainer {
-    margin-top: 3rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
