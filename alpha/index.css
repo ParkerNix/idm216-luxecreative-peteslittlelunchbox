@@ -220,7 +220,7 @@ button {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  height: 110vh;
+  height: 120vh;
   background: #E9F2FF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -312,6 +312,10 @@ button.tip {
     color: #899BC7; 
     border-radius: 5px;
     padding: .5rem 1.2rem;
+}
+
+input.coupon_code {
+    color: #4B5079;
 }
 
 .qty {
@@ -822,6 +826,7 @@ button.add-to-cart {
     margin-right: 2rem;
     border: 1px solid #DCE0E4;
     width: 75%;
+    margin-bottom: 6rem;
 }
 
 
