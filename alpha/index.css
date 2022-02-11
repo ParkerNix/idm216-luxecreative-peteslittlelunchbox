@@ -1086,8 +1086,16 @@ h4#issue {
 }
 
 
+
+
+
+
+
+
 /*lunch*/
+
 .lunchitems {
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1126,12 +1134,12 @@ h4#issue {
 /* ACCOUNT PAGE */
 
 h3.account {
-    margin-left: 1rem;
+    margin-left: 2rem;
     padding-top: 1rem;
 }
 
 h3.card {
-    margin-left: 1rem;
+    margin-left: 2rem;
     padding-top: 1rem;
 }
 .info-card {
@@ -1139,8 +1147,8 @@ h3.card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-radius: 10px;
@@ -1194,8 +1202,8 @@ input#email {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-radius: 10px;
@@ -1215,12 +1223,12 @@ input#email {
 }
 
 .other-info h2 {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 hr.info {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 0.5rem;
     background-color: #899BC7;
     border: none;
@@ -1231,14 +1239,14 @@ hr.info {
 .other-info img {
     float: right;
     padding-top: 0.2rem;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
 
 .save-changes {
     float: right;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 
