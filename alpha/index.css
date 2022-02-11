@@ -1034,13 +1034,12 @@ h4#issue {
 }
 
 .now {
-    width: 80px;
+    width: 100px;
     text-align: center;
 }
 
 .later {
-    color: rgba(80, 89, 160, 0.8);
-    opacity: 0.5;
+
 }
 
 .sectionhead {
