@@ -229,7 +229,7 @@ button.checkout:active {
 #menu
 {
   position: absolute;
-  width: 100vw;
+  width: 120vw;
   margin: -100px 0 0 -50px;
   padding: 50px 0 50px 50px;
   padding-top: 125px;
@@ -259,7 +259,13 @@ button.checkout:active {
     transform: none;
 }
 
-
+img.menu-lunchbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20rem;
+    padding-left: 6rem;
+}
 
 .nav {
     display:flex;
