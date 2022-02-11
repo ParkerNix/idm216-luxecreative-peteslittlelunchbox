@@ -263,7 +263,7 @@ img.menu-lunchbox {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 20rem;
+    padding-top: 14rem;
     padding-left: 6rem;
 }
 
@@ -1119,4 +1119,125 @@ h4#issue {
     border: none;
     margin: 1rem 0;
     padding: 0 1rem;
+}
+
+
+
+
+/* ACCOUNT PAGE */
+
+h3.account {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+h3.card {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+.info-card {
+    background-color: #E9F2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.info-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info-email {
+    display: flex;
+    justify-content: center;
+}
+
+.info-buttons h4, .info-buttons2 h4, .save-changes h4 {
+    margin: 0;
+    color: #F2F7FF;
+    font-size: 10px;
+}
+
+.info-buttons button, .infobuttons2 button {
+    margin-bottom: 1rem;
+}
+
+input#fname, input#lname {
+    border-radius: 5px;
+    border: none;
+    width: 7.313rem;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+.info-email {
+    margin-top: -1rem;
+}
+
+input#email {
+    border-radius: 5px;
+    border: none;
+    width: 16.125rem;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.info-card2 {
+    background-color: #E9F2FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.info-buttons2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.other-info {
+    padding-top: 2rem;
+}
+
+.other-info h2 {
+    margin-left: 1rem;
+}
+
+hr.info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #899BC7;
+    border: none;
+    height: 1px;
+    text-align: center;
+}
+
+.other-info img {
+    float: right;
+    padding-top: 0.2rem;
+    margin-right: 2rem;
+}
+
+.save-changes {
+    float: right;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
 }
