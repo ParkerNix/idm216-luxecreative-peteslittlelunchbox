@@ -118,7 +118,7 @@ button.redhover {
 button.redhover:hover {
     background-color: #ff9e98;
 }
-button.checkout:active {
+button.checkout:active, button.redhover:active {
     background-color: #E85454;
 }
 
@@ -924,7 +924,6 @@ button.add-to-cart {
     text-align: center;
     background-color: #899BC7;
     padding: 0.15rem;
-    margin-top: -1rem;
 }
   
 .lunchbox-img {
@@ -1242,17 +1241,20 @@ input#email {
 }
 
 .other-info {
-    padding-top: 2rem;
+    margin: 2rem;
 }
 
 .other-info h2 {
-    margin-left: 2rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.other-info h2:active {
+    background-color: #F2F7FF;
 }
 
 hr.info {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 0.5rem;
+    margin: 0;
     background-color: #899BC7;
     border: none;
     height: 1px;
