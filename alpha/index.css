@@ -101,6 +101,7 @@ button {
     background-color: #FF746B;
     font-family: 'Gilroy-Bold';
     color: #FFFFFF;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
     font-weight: 100;
     font-size: 18px;
     border-radius: 10rem;
@@ -130,7 +131,7 @@ button.checkout:active {
   position: relative;
   top: 37px;
   left: 30px;
-  width: 100%;
+  width: 390px;
   z-index: 1;
   
   -webkit-user-select: none;
@@ -1025,6 +1026,24 @@ h4#issue {
     border-width: 0 0 2px 0;
 }
 
+.pricetag {
+    position: relative;
+    top: -25px;
+    left: 100px;
+    margin: 0;
+    padding: .2rem .6rem;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.imgprice {
+    text-decoration: none;
+    color: #4B5079;
+    font-size: 12px;
+    font-family: 'Gilroy-Bold';
+}
+
 .now h4, .now p {
     margin: 0;
 }
@@ -1083,6 +1102,10 @@ h4#issue {
 
 .menuitem {
     margin: 0 0 2rem;
+}
+
+.menuitem h3 {
+    margin: 0;
 }
 
 
