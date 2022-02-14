@@ -42,7 +42,6 @@ h1 {
     font-family: 'Gilroy-ExtraBold';
     color: #4B5079;
     font-weight: 100;
-    letter-spacing: 1px;
     font-size: 24px;
 }
 
@@ -51,7 +50,6 @@ h2 {
     font-family: 'Gilroy-ExtraBold';
     color: #4B5079;
     font-weight: 100;
-    letter-spacing: 1px;
     font-size: 16px;
 }
 
@@ -60,7 +58,6 @@ h3 {
     color: #4B5079;
     font-weight: 100;
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
 h4 {
@@ -68,7 +65,6 @@ h4 {
     color: #4B5079;
     font-weight: 100;
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
 /* button text */
@@ -78,7 +74,6 @@ h5 {
     color: #4B5079;
     font-weight: 100;
     font-size: 12px;
-    letter-spacing: 1px;
 }
 
 p {
@@ -89,11 +84,21 @@ p {
     /* margin: .3rem 0 1rem; */
 }
 
-a {
+a, a:visited {
     font-family: 'Gilroy';
     font-size: 14px;
-    color: #899BC7;
+    color: #4B5079;
     /* margin: .3rem 0 1rem; */
+}
+
+a:hover {
+    color: #FF645A;
+    text-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+a:active {
+    color: #8D436D;
+    text-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -116,7 +121,7 @@ button.redhover {
     transition-timing-function: ease-in-out;
 }
 button.redhover:hover {
-    background-color: #ff9e98;
+    background-color: #777CAB;
 }
 button.checkout:active, button.redhover:active {
     background-color: #E85454;
@@ -132,7 +137,7 @@ button.checkout:active, button.redhover:active {
   top: 37px;
   left: 30px;
   width: 390px;
-  z-index: 1;
+  z-index: 20;
   
   -webkit-user-select: none;
   user-select: none;
@@ -162,7 +167,7 @@ button.checkout:active, button.redhover:active {
     cursor: pointer;
   
     opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    z-index: 21; /* and place it over the hamburger */
   
     -webkit-touch-callout: none;
 }
@@ -180,7 +185,7 @@ button.checkout:active, button.redhover:active {
     background: #4B5079;
     border-radius: 3px;
   
-    z-index: 1;
+    z-index: 20;
   
     transform-origin: 4px 0px;
   
@@ -229,6 +234,7 @@ button.checkout:active, button.redhover:active {
  */
 #menu
 {
+  z-index: 10;
   position: absolute;
   width: 120vw;
   margin: -100px 0 0 -50px;
@@ -360,14 +366,22 @@ img.menu-lunchbox {
 
 /* Cart Page */
 
+.empty {
+    text-align: center;
+}
+
 button.edit, button.remove, button.tip, .tipClicked {
     background-color: #FFFFFF;
     font-family: 'Gilroy-Bold';
     font-size: 12px;
-    border: 1.5px solid #899BC7;
-    color: #899BC7; 
+    border: 1.5px solid #4B5079;
+    color: #4B5079; 
     border-radius: 5px;
     padding: .1rem 0.7rem;
+}
+
+button.edit:active, button.remove:active {
+    background-color: #F2F7FF;
 }
 
 button.tip, .tipClicked {
@@ -384,7 +398,7 @@ button.tip, .tipClicked {
 
 .continue_shopping  {
     font-family:"Gilroy-Bold";
-    color: #899BC7;
+    color: #4B5079;
     font-size: 14px;
     display: flex; 
     justify-content: center;
@@ -413,16 +427,70 @@ input.coupon_code {
     color: #4B5079;
 }
 
-.qty {
+.custom-select {
+    width: 43.5px;
+    position: relative;
     border-radius: 5px;
     background-color: #E9F2FF;
     color: #4B5079;
     font-family: "Gilroy-Bold";
     border: none;
-    padding: .5rem 0.8rem;
     margin: 0 0 0 1rem;
     cursor: pointer;
+    z-index: 1;
 }
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: #C8DBF1;
+    border-radius: 10px;
+    width: 42px;
+  }
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 9px;
+  }
+
+  .select-items div,.select-selected {
+    color: #4B5079;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-items {
+    position: absolute;
+    background-color: #C8DBF1;
+    top: 33px;
+    left: -1px;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 
 .itemimg img {
     width: 100px;
@@ -673,22 +741,15 @@ h2.welcome {
 }
 
 .loginlink {
-    font-family: 'Gilroy';
     text-align: center;
     font-size: 0.75rem;
-    color: #777CAB;
+    color: #4B5079;
     padding-top: 2rem;
 }
 
 .loginlink a {
-    font-weight: 700;
+    padding: 5px;
 }
-
-.loginlink a:visited {
-    font-weight: 700;
-    color: #4B5079;
-}
-
 
 b.login {
     text-align: center;
@@ -1153,6 +1214,11 @@ h4#issue {
     text-decoration: none;
 }
 
+.lunchtag {
+    top: -24px;
+    left: 95.5px;
+}
+
 .imgprice {
     text-decoration: none;
     color: #4B5079;
@@ -1166,15 +1232,20 @@ h4#issue {
 
 .now h4 {
     font-family: 'Gilroy-ExtraBold';
+    letter-spacing: 0px;
 }
 
 .now {
-    width: 100px;
+    width: 110px;
     text-align: center;
 }
 
-.later {
+.later h4{
+    color: #4B5079;
+}
 
+.switch input[type=checkbox]:checked #orderlater{
+    color: #794b4b;
 }
 
 .sectionhead {
@@ -1218,6 +1289,13 @@ h4#issue {
 
 .menuitem {
     margin: 0 0 2rem;
+    width: 150px;
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: #4B5079;
+    font-family: 'Gilroy-Bold';
 }
 
 .menuitem h3 {
