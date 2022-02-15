@@ -1,0 +1,1258 @@
+* { 
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/Gilroy-Bold.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('fonts/Gilroy-ExtraBold.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Gilroy-ExtraBold';
+    color: #4B5079;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+
+h2 {
+    font-family: 'Gilroy-ExtraBold';
+    color: #4B5079;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* button text */
+
+h5 {
+    font-family: 'Gilroy-Bold'; 
+    color: #4B5079;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Gilroy';
+    font-size: 12px;
+    color: #4B5079;
+    line-height: 1.2rem;
+    /* margin: .3rem 0 1rem; */
+}
+
+a {
+    font-family: 'Gilroy';
+    font-size: 14px;
+    color: #899BC7;
+    /* margin: .3rem 0 1rem; */
+}
+
+
+button {
+    background-color: #FF746B;
+    font-family: 'Gilroy-Bold';
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 10rem;
+    border: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+}
+
+button.redhover {
+    background-color: #FF746B;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+button.redhover:hover {
+    background-color: #ff9e98;
+}
+button.checkout:active {
+    background-color: #E85454;
+}
+
+/* HAMBURGER */
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 37px;
+  left: 30px;
+  width: 100%;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+  
+    cursor: pointer;
+  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+  
+    -webkit-touch-callout: none;
+}
+
+/*
+ * hamburger
+ */
+#menuToggle span    {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 3px;
+    position: relative;
+  
+    background: #4B5079;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(42deg) translate(0px, 2.4px);
+    background: #4B5079;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)  {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 120vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px 0 50px 50px;
+  padding-top: 125px;
+  height: 120vh;
+  background: #E9F2FF;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 35px;
+    color: #4B5079;
+    padding: 20px 0;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+img.menu-lunchbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 14rem;
+    padding-left: 6rem;
+}
+
+.nav {
+    display:flex;
+    padding: .25rem 2rem 1rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.navnhb {
+    display:flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.nav h2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* About Page */
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.about_img h1 {
+    padding-top: 2rem;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.about-card {
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 15.063rem;
+    box-shadow: 0px 4px 10px #41275215;
+}
+
+.about-card-text {
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+
+.about-card-text h4 {
+    color: #FF645A;
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.about-card-text h4 {
+    padding-bottom: 0.5rem;
+}
+
+.about-card-text p {
+    margin-top: -1rem;
+}
+
+
+
+/* Cart Page */
+
+button.edit, button.remove, button.tip {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy-Bold';
+    font-size: 12px;
+    border: 1.5px solid #899BC7;
+    color: #899BC7; 
+    border-radius: 5px;
+    padding: .1rem 0.7rem;
+}
+
+button.tip {
+    padding: .4rem 1rem;
+}
+
+.continue_shopping  {
+    font-family:"Gilroy-Bold";
+    color: #899BC7;
+    font-size: 14px;
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 3rem;
+    border-style: none none solid none;
+    border-color: #EDF0F4;
+    border-width: 0 0 2px 0;
+}
+
+.continue_shopping:visited {
+    font-family:"Gilroy-Bold";
+    color: #899BC7;
+    font-size: 14px;
+}
+
+.coupon_code {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy';
+    border: 1.5px solid #899BC7;
+    color: #899BC7; 
+    border-radius: 5px;
+    padding: .5rem 1.2rem;
+}
+
+input.coupon_code {
+    color: #4B5079;
+}
+
+.qty {
+    border-radius: 5px;
+    background-color: #E9F2FF;
+    color: #4B5079;
+    font-family: "Gilroy-Bold";
+    border: none;
+    padding: .5rem 0.8rem;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+}
+
+.itemimg img {
+    width: 100px;
+    height: 100px;
+}
+
+.addons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 3rem 0 .5rem;
+    border-style: solid none none none;
+    border-color: #EDF0F4;
+    border-width: 2px 0 0 0;
+
+}
+
+.itemdesc {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.title {
+    width: 147px;
+    margin-left: 1rem;
+}
+
+.itembuttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.cartitem {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    border-style: solid none solid none;
+    border-color: #EDF0F4;
+    border-width: 2px 0 2px 0;
+    padding: 1.5rem 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.price h1, .price h3, .total_price h3 {
+    margin: .5rem;
+}
+
+.total_price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 0.5rem;
+}
+
+
+.total {
+    padding: 1.5rem 2rem 0;
+}
+
+.tips {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    flex-direction: row;
+}
+
+.cobutton {
+    padding-top: 4.75rem;
+    padding-right: 2rem;
+}
+
+button.checkout {
+    float: right;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 2rem;
+    padding-right: 6rem;
+}
+
+
+
+/* ORDER DETAILS */
+
+.orderdetails {
+    padding-left: 2rem;
+}
+
+.orderdetails h3 {
+    margin-bottom: -0.7rem;
+}
+
+h3.name {
+    width: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+hr.menu2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #EDF0F4;
+    border: none;
+    height: 1px;
+    text-align: center;
+}
+
+.cartitem2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 0.5rem;
+}
+
+.qty2 {
+    border-radius: 5px;
+    background-color: #E9F2FF;
+    color: #4B5079;
+    font-family: "Gilroy-Bold";
+    border: none;
+    padding: 0.3rem 0.8rem;
+    margin: 0 0 0 8rem;
+}
+
+.price1 {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    flex-direction: column;
+}
+
+.price2 h3 {
+    text-align: right;
+}
+
+.price1 h3, .price2 h3 {
+    margin-top: -0.05rem;
+}
+
+.price2 {
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    flex-direction: column;
+}
+
+.test {
+    padding-top: 19rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cobutton {
+    display: flex;
+    justify-content: right;
+}
+
+
+/* LOG IN PAGE */
+
+.logincontainer {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4.petes {
+    color: #FF746B;
+    text-align: center;
+    font-size: 0.938rem;
+    text-shadow: 2px 2px 1px #41275215;
+}
+
+h2.welcome {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px #41275215;
+    margin-top: -1rem;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+}
+
+#uname, #psw {
+    width: 15rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px; 
+}
+
+#loginbutton a, button.pay a, button.details a {
+    text-decoration: none;
+    color: #F2F7FF;
+    font-family: 'Gilroy-Bold';
+}
+
+#uname, #psw {
+    font-family: 'Gilroy';
+    color: #777CAB;
+    font-size: 0.75rem
+}
+
+#login {
+    font-family: 'Gilroy-Bold';
+    color: #777CAB;
+    font-size: 0.75rem
+}
+
+#loginbutton {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    width: 4.75rem;
+    font-size:0.75rem;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.psw {
+    font-family: 'Gilroy';
+    text-align: right;
+    font-size: 0.75rem;
+    color: #777CAB;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+.loginlink {
+    font-family: 'Gilroy';
+    text-align: center;
+    font-size: 0.75rem;
+    color: #777CAB;
+    padding-top: 2rem;
+}
+
+.loginlink a {
+    font-weight: 700;
+}
+
+.loginlink a:visited {
+    font-weight: 700;
+    color: #4B5079;
+}
+
+
+b.login {
+    text-align: center;
+    font-weight: 800;
+}
+
+.login-lunchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+
+
+/* Track Order */
+
+
+h2.nav {
+    text-align: center;
+    margin: 0;
+}
+
+.pickup-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.pickup-card {
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 19.25rem;
+    height: 23.938rem;
+    box-shadow: 0px 4px 10px #41275215;
+}
+
+img.checkout-lunchbox {
+    width: 3.813rem;
+    padding: 1.5rem 0;
+}
+
+.pickup-card-text {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.pickup-card-text .card-text {
+    margin-top: -0.8rem;
+}
+
+.card-text {
+    padding: 0;
+}
+
+.paymenthead {
+    text-align: center;
+    margin: 3rem 2rem 1rem;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 2rem;
+}
+
+.add-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-payment h4 {
+    text-align: center;
+}
+
+button.add-card {
+    text-align: center;
+    padding: 0rem;
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+}
+
+h4.pay {
+    font-family: 'Gilroy-ExtraBold';
+    color: #FFFFFF;
+}
+
+button.pay {
+    text-align: center;
+    width: 116px;
+    height: 36px;
+    padding: 0;
+}
+
+button.pay h4 {
+    margin: 0;
+}
+
+.pay-button {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* Edit Menu Item */
+
+.menu-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item-img img {
+/* width: 23.438rem; */
+    height: 100%;
+    width: 100%; 
+    object-fit: contain
+}
+
+.menu-item-description {
+    padding-top: 1rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.editwrap {
+    margin: 0 2rem;
+}
+
+.quantity-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.filter {
+    color: #899BC7;
+    margin-right: -1rem;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #4B5079;
+    font-family:"Gilroy-Bold";
+    letter-spacing: 0.5px;
+}
+
+input[type="radio"] {
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #4B5079;
+    width: 0.7em;
+    height: 0.7em;
+    border: 1px solid #4B5079;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.radio-buttons, .toppings-checklist {
+    padding-left: 1rem;
+    margin-top: -0.2rem;
+}
+
+hr.menu { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #EDF0F4;
+    border: none;
+    height: 1px;
+    text-align: center;
+    transform: translateX(-1rem);
+}
+
+button.add-to-cart {
+    margin: 0 2rem 2rem 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.additional-notes-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.additional-notes h3 {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
+
+#additional-notes {
+    border: 1px solid #DCE0E4;
+    width: 85%;
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+
+/* Track Order Page */
+
+.location-banner {
+    text-align: center;
+    background-color: #899BC7;
+    padding: 0.15rem;
+    margin-top: -1rem;
+}
+  
+.lunchbox-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-top: 2rem;
+}
+
+.tracking-meter {
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.thank-you-text {
+text-align: center;
+padding-bottom: 2rem;
+}
+
+.tracking-text {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #41275215;
+}
+
+.tracking-meter h3 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 1.125rem;
+}
+
+.tracking-meter p {
+    font-family: 'Gilroy-Bold';
+}
+
+.thank-you-text h1 {
+    font-size: 1.125rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    line-height: 1.5rem;
+}
+
+.tracking-text h3 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 0.75rem;
+}
+
+.tracking-text h1 {
+    margin-top: -0.2rem;
+}
+
+button.details, button.issue {
+    background-color: #FF746B;
+    font-family: 'Gilroy-Bold';
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 10rem;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+button.details h4, button.issue h4 {
+    margin: 0;
+}
+
+.issues {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4#issue {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+
+/*Menu*/
+.ordertime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-style: none none solid none;
+    border-color: #EDF0F4;
+    border-width: 0 0 2px 0;
+}
+
+.now h4, .now p {
+    margin: 0;
+}
+
+.now h4 {
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.now {
+    width: 100px;
+    text-align: center;
+}
+
+.later {
+
+}
+
+.sectionhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0;
+}
+
+.scrollmenu {
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+    border-style: none none solid none;
+    border-color: #EDF0F4;
+    border-width: 0 0 2px 0;
+}
+
+.emptybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emptybox p {
+    text-align: center;
+}
+
+.emptybox img {
+    width: 89px;
+}
+
+.menu {
+    margin: 0 2rem 1rem;
+}
+
+.menuitem img {
+    width: 150px;
+}
+
+.menuitem {
+    margin: 0 0 2rem;
+}
+
+
+
+
+
+
+
+
+/*lunch*/
+
+.lunchitems {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lunchhead {
+    display: flex;
+    background-color: #F2F7FF;
+    height: 117px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    border-radius: 67px;
+    box-shadow: inset 0px 2.71287px 13.5644px rgba(0, 0, 0, 0.05);
+    background-color: #F8FAFF;
+    font-family: 'Gilroy-Bold';
+    color: #4B5079;
+    height: 27px;
+    width: 258px;
+    border: none;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+
+
+
+/* ACCOUNT PAGE */
+
+h3.account {
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+h3.card {
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.info-card {
+    background-color: #E9F2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.info-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info-email {
+    display: flex;
+    justify-content: center;
+}
+
+.info-buttons h4, .info-buttons2 h4, .save-changes h4 {
+    margin: 0;
+    color: #F2F7FF;
+    font-size: 10px;
+}
+
+.info-buttons button, .infobuttons2 button {
+    margin-bottom: 1rem;
+}
+
+input#fname, input#lname {
+    border-radius: 5px;
+    border: none;
+    width: 7.313rem;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+.info-email {
+    margin-top: -1rem;
+}
+
+input#email {
+    border-radius: 5px;
+    border: none;
+    width: 16.125rem;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.info-card2 {
+    background-color: #E9F2FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.info-buttons2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.other-info {
+    padding-top: 2rem;
+}
+
+.other-info h2 {
+    margin-left: 2rem;
+}
+
+hr.info {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    background-color: #899BC7;
+    border: none;
+    height: 1px;
+    text-align: center;
+}
+
+.other-info img {
+    float: right;
+    padding-top: 0.2rem;
+    margin-right: 2.5rem;
+}
+
+.save-changes {
+    float: right;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+/* My lunchbox page */
+
