@@ -431,7 +431,7 @@ input.coupon_code {
     width: 43.5px;
     position: relative;
     border-radius: 5px;
-    background-color: #E9F2FF;
+    background-color: none;
     color: #4B5079;
     font-family: "Gilroy-Bold";
     border: none;
@@ -445,7 +445,7 @@ input.coupon_code {
 }
 
 .select-selected {
-    background-color: #C8DBF1;
+    background-color: #E9F2FF;
     border-radius: 10px;
     width: 42px;
   }
@@ -458,11 +458,11 @@ input.coupon_code {
     width: 0;
     height: 0;
     border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    border-color: #4B5079 transparent transparent transparent;
   }
 
   .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
+    border-color: transparent transparent #4B5079 transparent;
     top: 9px;
   }
 
@@ -477,7 +477,7 @@ input.coupon_code {
 
   .select-items {
     position: absolute;
-    background-color: #C8DBF1;
+    background-color: #E9F2FF;
     top: 33px;
     left: -1px;
     z-index: 0;
@@ -853,7 +853,7 @@ h4.pay {
 
 button.pay {
     text-align: center;
-    width: 116px;
+    width: 130px;
     height: 36px;
     padding: 0;
 }
@@ -1258,7 +1258,7 @@ h4#issue {
 .scrollmenu {
     display: flex;
     overflow: scroll;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0 1rem 1rem;
     border-style: none none solid none;
     border-color: #EDF0F4;
