@@ -88,6 +88,7 @@ a, a:visited {
     font-family: 'Gilroy';
     font-size: 14px;
     color: #4B5079;
+    text-decoration: none;
     /* margin: .3rem 0 1rem; */
 }
 
@@ -1102,6 +1103,10 @@ button.add-to-cart {
     text-align: center;
     background-color: #899BC7;
     padding: 0.15rem;
+}
+
+a.track:visited {
+    text-decoration: none;
 }
   
 .lunchbox-img {
