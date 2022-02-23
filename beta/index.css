@@ -1227,13 +1227,24 @@ h4#issue {
 
 .pricetag {
     position: relative;
-    top: -31px;
-    left: 60px;
+    top: -25px;
+    left: 44px;
     margin: 0;
-    padding: 0.4rem 0.6rem;
+    padding: .2rem .6rem;
     background-color: #F8FAFF;
     border-radius: 5px 5px 5px 5px;
     text-decoration: none;
+}
+
+.pricetag-test {
+        position: relative;
+        top: -31px;
+        left: 60px;
+        margin: 0;
+        padding: 0.4rem 0.6rem;
+        background-color: #F8FAFF;
+        border-radius: 5px 5px 5px 5px;
+        text-decoration: none;
 }
 
 .heart {
@@ -1246,7 +1257,6 @@ h4#issue {
     color: #ffffff;
     text-decoration: none;
 }
-
 
 [id='toggle-heart'] {
         position: absolute;
