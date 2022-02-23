@@ -414,6 +414,12 @@ button.tip, .tipClicked {
     font-size: 14px;
 }
 
+a.continue_shopping:hover {
+    font-family:"Gilroy-Bold";
+    color: #E85454;
+    font-size: 14px;
+}
+
 .coupon_code {
     background-color: #FFFFFF;
     font-family: 'Gilroy';
@@ -584,6 +590,8 @@ button.checkout {
     padding-left: 2rem;
     padding-right: 6rem;
 }
+
+
 
 
 

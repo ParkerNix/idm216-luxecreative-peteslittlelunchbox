@@ -415,6 +415,12 @@ button.tip, .tipClicked {
     font-size: 14px;
 }
 
+a.continue_shopping:hover {
+    font-family:"Gilroy-Bold";
+    color: #E85454;
+    font-size: 14px;
+}
+
 .coupon_code {
     background-color: #FFFFFF;
     font-family: 'Gilroy';
@@ -585,6 +591,12 @@ button.checkout {
     padding-left: 2rem;
     padding-right: 6rem;
 }
+
+
+
+
+
+
 
 
 
@@ -823,7 +835,8 @@ img.checkout-lunchbox {
 .payment {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     flex-direction: row;
     margin: 0 2rem;
 }
@@ -1095,8 +1108,6 @@ button.add-to-cart {
 
 
 
-
-
 /* Track Order Page */
 
 .location-banner {
@@ -1211,13 +1222,35 @@ h4#issue {
 .pricetag {
     position: relative;
     top: -25px;
-    left: 100px;
+    left: 44px;
     margin: 0;
     padding: .2rem .6rem;
-    background-color: #ffffff;
+    background-color: #F8FAFF;
     border-radius: 5px 5px 5px 5px;
     text-decoration: none;
 }
+
+.heart {
+    position: relative;
+    top: -110px;
+    left: 115px;
+    margin: 0;
+    padding: 0.2rem 0.6rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.heart:after {
+    position: relative;
+    top: -110px;
+    left: 115px;
+    margin: 0;
+    padding: 0.2rem 0.6rem;
+    color: #ffffff;
+    width: 50px;
+    text-decoration: none;
+}
+
 
 .lunchtag {
     top: -24px;
