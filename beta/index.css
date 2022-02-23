@@ -688,6 +688,19 @@ button.checkout {
 
 @media screen and (min-width: 750px) {
 
+.itemdetails {
+    padding-left: 3rem;
+}
+
+.cartitem {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-style: solid none solid none;
+    border-color: #EDF0F4;
+    border-width: 2px 0 2px 0;
+    padding: 2rem 0;
+}
 
 }
 
