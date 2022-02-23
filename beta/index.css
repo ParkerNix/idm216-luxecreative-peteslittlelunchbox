@@ -275,7 +275,6 @@ button.checkout:active, button.redhover:active {
 }
 
 
-
 .nav {
     display:flex;
     padding: .25rem 2rem 1rem;
@@ -299,6 +298,45 @@ button.checkout:active, button.redhover:active {
     justify-content:center;
     align-items: center;
 }
+
+img.cart_icon {
+    width:30px; 
+    height:23px;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    h2 {
+       font-size: 18px;
+    }
+
+    img.cart_icon {
+        width:35px;
+        height: 28px;
+    }
+
+    #menuToggle span    {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 6px;
+        position: relative;
+      
+        background: #4B5079;
+        border-radius: 3px;
+      
+        z-index: 20;
+      
+        transform-origin: 4px 0px;
+      
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+
+}
+
 
 
 
@@ -1422,7 +1460,7 @@ h4#issue {
 
 .lunchhead {
     display: flex;
-    background-color: #F2F7FF;
+    background-color: #E6EFFF;
     height: 117px;
     justify-content: center;
     align-items: center;
@@ -1445,6 +1483,23 @@ h4#issue {
     margin: 1rem 0;
     padding: 0 1rem;
 }
+
+
+@media screen and (min-width: 750px) {
+
+    .lunchhead {
+        display: flex;
+        background-color: #E6EFFF;
+        height: 223px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
 
 
 
@@ -1572,8 +1627,14 @@ hr.info {
 
 
 
+@media screen and (min-width: 750px) {
 
+    h2 {
+       font-size: 18px;
+    }
+}
 
 
 /* My lunchbox page */
+
 
