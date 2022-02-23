@@ -399,20 +399,24 @@ button.tip, .tipClicked {
 }
 
 .continue_shopping  {
-    font-family:"Gilroy-Bold";
+    font-family: "Gilroy-Bold";
     color: #4B5079;
     font-size: 14px;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    padding-bottom: 3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-style: none none solid none;
     border-color: #EDF0F4;
     border-width: 0 0 2px 0;
+    background-color: #E9F2FF;
+    text-decoration: underline;
 }
 
 .continue_shopping:visited {
     font-family:"Gilroy-Bold";
-    color: #899BC7;
+    color: #4B5079;
     font-size: 14px;
 }
 
@@ -1130,6 +1134,7 @@ a.track:visited {
 }
 
 .tracking-meter {
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
     text-align: center;
 }
