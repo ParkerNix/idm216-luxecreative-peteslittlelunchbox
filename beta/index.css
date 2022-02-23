@@ -271,8 +271,9 @@ button.checkout:active, button.redhover:active {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 10rem;
+    padding-top: 14rem;
 }
+
 
 
 .nav {
@@ -950,7 +951,7 @@ input[type="checkbox"] {
 .container {
     display: block;
     position: relative;
-    padding: 0 0 0 24px;
+    padding: 0 0 0 30px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -968,10 +969,10 @@ input[type="checkbox"] {
   /* Create a custom radio button */
   .radiomark {
     position: absolute;
-    top: 4px;
+    top: -2px;
     left: 0;
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     background-color: rgb(255, 255, 255);
     border: 1px solid #232323;
     border-radius: 50%;
@@ -1001,12 +1002,12 @@ input[type="checkbox"] {
   
   /* Style the indicator (dot/circle) */
   .container .radiomark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
   }
 
   /* Hide the browser's default checkbox */
@@ -1021,10 +1022,10 @@ input[type="checkbox"] {
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
-    height: 12px;
-    width: 12px;
+    height: 20px;
+    width: 20px;
     background-color: #eee;
   }
   
@@ -1052,10 +1053,10 @@ input[type="checkbox"] {
   
   /* Style the checkmark/indicator */
   .container .checkmark:after {
-    left: 3px;
-    top: 0px;
-    width: 2.5px;
-    height: 5px;
+    left: 7px;
+    top: 5px;
+    width: 3.5px;
+    height: 6px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
