@@ -466,16 +466,17 @@ input.coupon_code {
     position: absolute;
     content: "";
     top: 17px;
-    right: 3px;
+    right: 6px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
+    border: 4px solid transparent;
     border-color: #4B5079 transparent transparent transparent;
+    border-radius: 2px;
   }
 
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent #4B5079 transparent;
-    top: 9px;
+    top: 12px;
   }
 
   .select-items div,.select-selected {
@@ -937,7 +938,7 @@ p.filter {
 }
 
 label {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #4B5079;
     font-family:"Gilroy-Bold";
     letter-spacing: 0.5px;
@@ -978,8 +979,9 @@ input[type="checkbox"] {
     height: 20px;
     width: 20px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #232323;
+    border: 1px solid #899BC7;
     border-radius: 50%;
+    box-shadow: 0px 2px 3px 0px #0000001a inset;
   }
   
   /* On mouse-over, add a grey background color */
@@ -1031,6 +1033,9 @@ input[type="checkbox"] {
     height: 20px;
     width: 20px;
     background-color: #eee;
+    border-style: solid;
+    border-color: #899BC7;
+    border-radius: 2px;
   }
   
   /* On mouse-over, add a grey background color */
@@ -1062,7 +1067,7 @@ input[type="checkbox"] {
     width: 3.5px;
     height: 6px;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -1418,6 +1423,7 @@ h4#issue {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 .lunchhead {
