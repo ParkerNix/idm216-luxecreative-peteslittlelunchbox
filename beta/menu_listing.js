@@ -20,7 +20,7 @@ for (let i = 0; i < foods.length; i++) {
     let foodName = foodArray[2];
     console.log('foodImage is ' + foodImage);
 
-    text += '<div class="menuitem"> <a href="edit_item.html"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="pricetag lunchtag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+    text += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
 }
 
 document.getElementById("demo").innerHTML = text;
