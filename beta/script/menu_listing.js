@@ -1,17 +1,30 @@
 let categories = ['breakfast', 'lunch', 'sides', 'drinks']
 
 let foods = [
+    ['images/bacon_egg_cheese.png', '6.00', 'Bacon Egg and Cheese', 0],
+    ['images/bacon_egg_cheese_hashbrown.png', '6.00', 'Bacon Egg and Cheese with Hashbrown', 0],
+    ['images/steak_egg_cheese.png', '7.00', 'Steak Egg and Cheese', 0],
+    ['images/egg_scrapple.png', '5.00', 'Egg Scrapple', 0],
     ['images/cheesesteak.png', '6.00', 'Cheesesteak', 1],
-    ['images/bacon_cheeseburger.png', '6.00', 'Bacon Cheeseburger', 1],
+    ['images/bacon_cheeseburger.png', '5.00', 'Bacon Cheeseburger', 1],
     ['images/turkey_club.png', '6.00', 'Turkey Club', 1],
-    ['images/hot_sausage.png', '6.00', 'Hot Sausage', 1],
+    ['images/hot_sausage.png', '7.00', 'Hot Sausage', 1],
     ['images/buffalo_cheesestake.png', '6.00', 'Buffalo Cheesesteak', 1],
     ['images/ham_club.png', '6.00', 'Ham Club', 1],
-    ['images/grilled_chicken_hoagie.png', '6.00', 'Grilled Chicken Hoagie', 1],
+    ['images/grilled_chicken_hoagie.png', '7.50', 'Grilled Chicken Hoagie', 1],
     ['images/lamb_gyro.png', '6.00', 'Lamb Gyro', 1],
-    ['images/mushroom_cheesesteak.png', '6.00', 'Mushroom Cheesesteak', 1],
-    ['images/hot_dog.png', '6.00', 'Hot Dog', 1]
+    ['images/mushroom_cheesesteak.png', '7.00', 'Mushroom Cheesesteak', 1],
+    ['images/hot_dog.png', '6.00', 'Hot Dog', 1],
+    ['images/cart_chips_2x.png', '0.75', 'Chips', 2],
+    ['images/cart_hashbrown_2x.png', '1.50', 'Hashbrown', 2],
+    ['images/cart_thai_tea_2x.png', '2.50', 'Thai Tea', 2],
+    ['images/cart_muffin_2x.png', '1.75', 'Muffin', 2],
+    ['images/thai_tea.png', '2.50', 'Thai Tea', 3],
+    ['images/hot_coffee.png', '2.50', 'Hot Coffee', 3],
+    ['images/tea.png', '2.50', 'Tea', 3],
+    ['images/hot_chocolate.png', '2.50', 'Hot Chocolate', 3]
 ];
+
 
 let text = "";
 for (let i = 0; i < foods.length; i++) {
