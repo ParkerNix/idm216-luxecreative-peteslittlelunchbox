@@ -1301,7 +1301,7 @@ input[type="checkbox"] {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: white;
+    background: #899BC7;
   }
 
   /* Hide the browser's default checkbox */
