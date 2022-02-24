@@ -128,6 +128,13 @@ button.checkout:active, button.redhover:active {
     background-color: #E85454;
 }
 
+
+@media screen and (min-width: 750px) {
+    p {
+        font-size: 14px;
+    }
+}
+
 /* HAMBURGER */
 
 
@@ -349,6 +356,10 @@ li.underline {
         transition:all 0s ease;
     }
 
+    .back {
+        cursor: pointer;
+    }
+
 @media screen and (min-width: 750px) {
 
     h2 {
@@ -539,7 +550,6 @@ button.tip, .tipClicked {
     border-color: #EDF0F4;
     border-width: 0 0 2px 0;
     background-color: #E9F2FF;
-    text-decoration: underline;
 }
 
 .continue_shopping:visited {
@@ -640,13 +650,14 @@ input.coupon_code {
 
 .addons {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     gap: 1rem;
     padding: 3rem 0 .5rem;
     border-style: solid none none none;
     border-color: #EDF0F4;
     border-width: 2px 0 0 0;
+    overflow: scroll;
+    margin: 0 2rem;
 
 }
 
@@ -716,6 +727,7 @@ input.coupon_code {
 
 button.checkout {
     float: right;
+    margin-bottom: 2rem;
 }
 
 .code {
@@ -744,6 +756,15 @@ button.checkout {
     border-color: #EDF0F4;
     border-width: 2px 0 2px 0;
     padding: 2rem 0;
+}
+
+.addons {
+    justify-content: center;
+}
+
+.tips {
+    justify-content: flex-start;
+    margin: 0 0 0 .5rem;
 }
 
 }
@@ -1274,7 +1295,7 @@ input[type="checkbox"] {
   
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .radiomark {
-    background-color: rgb(189, 75, 75);
+    background-color: #E9F2FF;
   }
   
   /* When the radio button is checked, add a blue background */
@@ -1320,15 +1341,16 @@ input[type="checkbox"] {
     left: 0;
     height: 12px;
     width: 12px;
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     border-style: solid;
     border-color: #899BC7;
+    border-width: 2px;
     border-radius: 2px;
   }
   
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #E9F2FF;
   }
   
   /* When the checkbox is checked, add a blue background */
@@ -1398,9 +1420,12 @@ button.add-to-cart {
 
 
 #additional-notes {
-    border: 1px solid #DCE0E4;
     width: 85%;
     margin-bottom: 6rem;
+    background: #FFFFFF;
+    border: 1px solid #DCE0E4;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 
@@ -1761,6 +1786,11 @@ h1.thanks {
     transition: 0.3s;
 }
 
+#cartadded {
+    width: 40px;
+    height: auto;
+}
+
 @media screen and (min-width: 750px) {
     .menu {
         display: flex;
@@ -1818,11 +1848,15 @@ h1.thanks {
 @media screen and (min-width: 750px) {
 
     .lunchhead {
-        display: flex;
-        background-color: #E6EFFF;
         height: 223px;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .catsection {
+        max-width: 650px;
+    }
+
+    .lunchitems {
+        justify-content: flex-start;
     }
 }
 
