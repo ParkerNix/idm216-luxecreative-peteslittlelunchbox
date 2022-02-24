@@ -68,22 +68,22 @@
         <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1.2rem;">Toppings</h4>
         <div class="toppings-checklist">
             <label for="salt" class="container">Salt
-            <input type="checkbox" id="salt" name="salt" value="salt">
+            <input type="checkbox" id="salt" name="salt" value="salt" class="checkbutton">
             <span class="checkmark"></span>
             </label><br>
             <hr class="menu">
             <label for="pepper" class="container">Pepper
-            <input type="checkbox" id="pepper" name="pepper" value="pepper">
+            <input type="checkbox" id="pepper" name="pepper" value="pepper" class="checkbutton">
             <span class="checkmark"></span>
             </label><br>
             <hr class="menu">
             <label for="ketchup" class="container">Ketchup
-            <input type="checkbox" id="ketchup" name="ketchup" value="ketchup">
+            <input type="checkbox" id="ketchup" name="ketchup" value="ketchup" class="checkbutton">
             <span class="checkmark"></span>
             </label><br>
             <hr class="menu">
             <label for="onions" class="container">Onions
-            <input type="checkbox" id="onions" name="onions" value="onions">
+            <input type="checkbox" id="onions" name="onions" value="onions" class="checkbutton">
             <span class="checkmark"></span>
             </label><br>
         </div>
@@ -99,7 +99,7 @@
 
     <div class="add-to-cart">
         <a href="menu_1cart.html" class="redhover">
-        <button class="add-to-cart  redhover">ADD TO CART +$6.00</button>
+        <button class="add-to-cart  redhover" id="addtocart">ADD TO CART +$6.00</button>
         </a>
     </div>
 </div>
@@ -183,5 +183,6 @@
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
     </script>
+    <script src="script/item_custom.js"></script>
 </body>
 </html>
