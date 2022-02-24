@@ -440,8 +440,11 @@ img.cart_icon {
     h4.track {
         font-size: 18px;
     }
-}
 
+    img.location {
+        width: 25px;
+    }
+}
 
 
 
