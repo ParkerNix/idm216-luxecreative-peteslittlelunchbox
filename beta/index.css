@@ -50,7 +50,7 @@ h2 {
     font-family: 'Gilroy-ExtraBold';
     color: #4B5079;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 h3 {
@@ -540,27 +540,25 @@ button.tip, .tipClicked {
 .continue_shopping  {
     font-family: "Gilroy-Bold";
     color: #4B5079;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 2rem;
+    padding: 1.3rem 0;
     border-style: none none solid none;
     border-color: #EDF0F4;
     border-width: 0 0 2px 0;
     background-color: #E9F2FF;
+    text-decoration: none;
 }
 
 .continue_shopping:visited {
     font-family:"Gilroy-Bold";
     color: #4B5079;
-    font-size: 14px;
 }
 
 a.continue_shopping:hover {
     font-family:"Gilroy-Bold";
-    font-size: 14px;
 }
 
 .coupon_code {
@@ -651,7 +649,7 @@ input.coupon_code {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 3rem 0 .5rem;
+    padding: 2rem 0 .5rem;
     border-style: solid none none none;
     border-color: #EDF0F4;
     border-width: 2px 0 0 0;
@@ -672,6 +670,7 @@ input.coupon_code {
 
 .desctext p {
     color: #4B5079;
+    margin-top: .3rem;
 }
 
 .title {
@@ -694,6 +693,7 @@ input.coupon_code {
     border-color: #EDF0F4;
     border-width: 2px 0 2px 0;
     padding: 1.5rem 0;
+    gap: 1rem;
 }
 
 .price {
@@ -787,6 +787,7 @@ button.checkout {
 
 .orderdetails {
     padding-left: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 .orderdetails h3 {
@@ -797,6 +798,14 @@ h3.name {
     width: 100px;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.orderdetails>p {
+    margin: 0 0 2px;
+}
+
+.orderdetails>h1 {
+    margin: 0 0 .5rem;
 }
 
 hr.menu2 {
@@ -1233,6 +1242,16 @@ button.pay h4 {
     padding-top: 1rem;
 }
 
+.menu-item-description>h1 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.menu-item-description>p {
+    margin-top: .4rem;
+    font-size: 1rem;
+}
+
 .filter {
     display: flex;
     justify-content: space-between;
@@ -1256,7 +1275,7 @@ p.filter {
 }
 
 label {
-    font-size: 1rem;
+    font-size: 18px;
     color: #4B5079;
     font-family:"Gilroy-Bold";
     letter-spacing: 0.5px;
@@ -1292,10 +1311,9 @@ input[type="checkbox"] {
   /* Create a custom radio button */
   .radiomark {
     position: absolute;
-    top: -2px;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     background-color: rgb(255, 255, 255);
     border: 1px solid #899BC7;
     border-radius: 50%;
@@ -1310,6 +1328,7 @@ input[type="checkbox"] {
   /* When the radio button is checked, add a blue background */
   .container input:checked ~ .radiomark {
     background-color: #899BC7;
+    box-shadow: 0px 2px 3px 0px #0000001a inset;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -1348,9 +1367,8 @@ input[type="checkbox"] {
     position: absolute;
     top: 0;
     left: 0;
-    height: 12px;
-    width: 12px;
-    background-color: rgb(255, 255, 255);
+    height: 18px;
+    width: 18px;
     border-style: solid;
     border-color: #899BC7;
     border-width: 2px;
@@ -1381,10 +1399,10 @@ input[type="checkbox"] {
   
   /* Style the checkmark/indicator */
   .container .checkmark:after {
-    left: 1px;
-    top: -2px;
+    left: 5px;
+    top: 1px;
     width: 3.5px;
-    height: 6px;
+    height: 8px;
     border: solid white;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
