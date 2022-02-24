@@ -1760,7 +1760,7 @@ h1.thanks {
 }
 
 .emptybox p {
-    text-align: center;
+    line-height: 1.3rem;
 }
 
 .emptybox img {
@@ -1849,6 +1849,18 @@ h1.thanks {
     .menusectionlb, .menusection {
         width: 100%;
     }
+
+    .emptybox p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
+    
+    .emptybox img {
+        width: 150px;
+    }
+
+
 }
 
 
