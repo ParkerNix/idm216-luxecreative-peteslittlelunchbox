@@ -50,14 +50,14 @@ h2 {
     font-family: 'Gilroy-ExtraBold';
     color: #4B5079;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h3 {
     font-family: 'Gilroy-Bold'; 
     color: #4B5079;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h4 {
@@ -78,7 +78,7 @@ h5 {
 
 p {
     font-family: 'Gilroy';
-    font-size: 12px;
+    font-size: 14px;
     color: #4B5079;
     line-height: 1.2rem;
     /* margin: .3rem 0 1rem; */
@@ -88,7 +88,6 @@ a, a:visited {
     font-family: 'Gilroy';
     font-size: 14px;
     color: #4B5079;
-    text-decoration: none;
     /* margin: .3rem 0 1rem; */
 }
 
@@ -276,8 +275,8 @@ button.checkout:active, button.redhover:active {
 
 .menu-lunchbox {
     position: relative;
-    top: 200px;
-    left: -60px;
+    top: 400px;
+    left: -110px;
 }
 
 
@@ -529,6 +528,7 @@ button.tip, .tipClicked {
     padding: .4rem 1rem;
     transition: 0.25s;
     transition-timing-function: ease-in-out;
+    flex-grow: 1;
 }
 
 .tipClicked {
@@ -560,7 +560,6 @@ button.tip, .tipClicked {
 
 a.continue_shopping:hover {
     font-family:"Gilroy-Bold";
-    color: #E85454;
     font-size: 14px;
 }
 
@@ -667,9 +666,17 @@ input.coupon_code {
     flex-direction: row;
 }
 
+.desctext {
+    width: 75%;
+}
+
+.desctext p {
+    color: #4B5079;
+}
+
 .title {
     width: 147px;
-    margin-left: 1rem;
+    margin: 0;
 }
 
 .itembuttons {
@@ -677,7 +684,6 @@ input.coupon_code {
     justify-content: space-between;
     flex-direction: row;
     gap: 0.5rem;
-    margin-left: 1rem;
 }
 
 .cartitem {
@@ -818,7 +824,10 @@ hr.menu2 {
     font-family: "Gilroy-Bold";
     border: none;
     padding: 0.3rem 0.8rem;
-    margin: 0 0 0 8rem;
+}
+
+.detailsqty {
+    justify-content: end;
 }
 
 .price1 {
@@ -1426,6 +1435,7 @@ button.add-to-cart {
     border: 1px solid #DCE0E4;
     box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    font-family: 'Gilroy';
 }
 
 
@@ -1796,6 +1806,13 @@ h1.thanks {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 704px;
+        margin: 0 0 1rem;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
     }
 
     .menusectionlb, .menusection {
@@ -2064,6 +2081,8 @@ hr.info {
     img.back {
         width: 20px;
     }
+
+
 }
 
 
