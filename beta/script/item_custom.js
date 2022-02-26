@@ -10,9 +10,20 @@ function checkAddress(chkBox)
     if (chkBox.checked)
     {
         console.log('you checked something omg');
+    } else {
+        console.log('shes not checked');
     }
 }
 
 
 
-addtocart.addEventListener( mouseover, checkAddress(), false);
+addtocart.addEventListener('click', function() 
+{
+    if (checkbutton.checked)
+    {
+        console.log('you checked something omg');
+    } else {
+        console.log('shes not checked');
+    }
+}
+, false);
