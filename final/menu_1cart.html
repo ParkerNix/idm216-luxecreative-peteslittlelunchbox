@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Order | Pete's Little Lunch Box</title>
+</head>
+
+<body style="background-color: #F8FAFF;">
+
+    <nav role="navigation">
+        <div id="menuToggle">
+         
+          <input type="checkbox" />
+          
+          <!--Hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a class="underline" href="about.html"><li class="underline" >ABOUT</li></a>
+            <a class="underline" href="menu.html"><li class="underline" >ORDER</li></a>
+            <a class="underline" href="my_lunchbox.html"><li class="underline" >MY LUNCHBOX</li></a>
+            <a class="underline" href="account.html"><li class="underline" >ACCOUNT</li></a>
+            <div class="menu-lunchbox">
+                <img src="images/login-lunchbox.svg" alt="lunchbox">
+            </div>
+          </ul>
+        </div>
+    </nav>
+    
+      <div class="nav">
+        <span style="width: 10px;"></span>
+        <h2>Order</h2>
+        <a href="cart.html"><img class="cart_icon" id="cartadded" src="images/cart_lunchbox_menu_item_added.png" alt="cart_icon"></a>
+    </div>
+
+    <div class="middle">
+        <div class="menu">
+            <div class="ordertime">
+                <div class="now">
+                    <h4>Order Now</h4>
+                    <p>15 minutes</p>
+                </div>
+                <div class="switch">
+                    <input type="checkbox" id="toggleAll" />
+                    <label for="toggleAll"></label>
+                </div>
+                <div class="now later">
+                    <h4>Order Later</h4>
+                    <p>Pick a Time</p>
+                </div>
+            </div>
+    
+            <div class="menusection">
+                <div class="sectionhead">
+                    <h1 class="sectiontitle">Pete's Favorites</h1>
+                    <a href="#">VIEW ALL</a>
+                </div>
+                <div class="scrollmenu">
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/buffalo_cheesestake.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$7.00</span>
+                        </a>
+                        <h3>Buffalo Cheesesteak</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/thai_tea.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$2.50</span>
+                            </a>
+                            <h3>Thai Tea</h3>   
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/cheesesteak.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$6.00</span>
+                            </a>
+                            <h3>Cheesesteak</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/bacon_egg_cheese_hashbrown.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$6.00</span>
+                            </a>
+                            <h3>Bacon, Egg, and Cheese w Hashbrown</h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menusectionlb">
+                <div class="sectionhead">
+                    <h1 class="sectiontitle">My Lunch Box</h1>
+                    <a href="my_lunchbox.html">VIEW ALL</a>
+                </div>
+                <div class="emptybox">
+                    <img src="images/lunchbox_new_color.png">
+                    <p>No items in your lunchbox yet. ☹️<br>Tap on hearts to add your favorites!</p>
+                </div>
+            </div>
+    
+            <div class="menusection">
+                <div class="sectionhead">
+                    <h1 class="sectiontitle">Breakfast</h1>
+                    <a href="breakfast.html">VIEW ALL</a>
+                </div>
+                <div class="scrollmenu">
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/bacon_egg_cheese_hashbrown.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <!--<input id="toggle-heart" type="checkbox"/>
+                            <label class="heart" for="toggle-heart"><span>&#9829;</span></label>-->
+    
+                            <span class="pricetag-test">$6.00</span>
+                            </a>
+                            <h3>Bacon, Egg, and Cheese w Hashbrown</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/bacon_egg_cheese.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$5.00</span>
+                            </a>
+                            <h3>Bacon, Egg, and Cheese</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/egg_scrapple.png" alt="cheesesteak">
+                             <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$5.00</span>
+                            </a>
+                            <h3>Egg Scrapple</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/steak_egg_cheese.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$7.00</span>
+                            </a>
+                            <h3>Steak, Egg, and Cheese</h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menusection">
+                <div class="sectionhead">
+                    <h1 class="sectiontitle">Lunch</h1>
+                    <a href="lunch.html">VIEW ALL</a>
+                </div>
+                <div class="scrollmenu">
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/turkey_club.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$6.00</span>
+                            </a>
+                            <h3>Turkey Club</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/burger.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$5.00</span>
+                            </a>
+                            <h3>Burger</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/hot_dog.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$2.00</span>
+                            </a>
+                            <h3>Hot Dog</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/mushroom_cheesesteak.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$7.00</span>
+                            </a>
+                            <h3>Mushroom Cheesesteak</h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menusection">
+                <div class="sectionhead">
+                    <h1 class="sectiontitle">Drinks</h1>
+                    <a href="drinks.html">VIEW ALL</a>
+                </div>
+                <div class="scrollmenu">
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/thai_tea.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$2.50</span>
+                            </a>
+                            <h3>Thai Tea</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/hot_coffee.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$1.00</span>
+                            </a>
+                            <h3>Coffee</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/tea.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$1.00</span>
+                            </a>
+                            <h3>Tea</h3>
+                    </div>
+                    <div class="menuitem">
+                        <a href="edit_item.html" class="imgprice">
+                            <img src="images/hot_chocolate.png" alt="cheesesteak">
+                            <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span>
+                            <span class="pricetag">$1.00</span>
+                            </a>
+                            <h3>Hot Chocolate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</body>
+</html>
