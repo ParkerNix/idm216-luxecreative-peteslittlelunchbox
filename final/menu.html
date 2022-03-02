@@ -47,13 +47,55 @@
             </div>
             <div class="switch">
                 <input type="checkbox" id="toggleAll" />
-                <label for="toggleAll"></label>
+                <label id="modal-switch" for="toggleAll"></label>
             </div>
             <div class="now later">
                 <h4>Order Later</h4>
                 <p>Pick a Time</p>
             </div>
         </div>
+
+        <!--Modal Code -->
+
+    <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal">
+    
+
+        <div class="time-modal">
+            <div class="modal-header">
+                <h4 class="modal-header">Choose A Pick Up Time</h4>
+        </div>
+
+        <button class="modal-close-btn" id="close-btn"><i class="fa fa-times" title="times"></i></button>
+          
+        <div class="modal-dropdowns">
+            <div class="day-dropdown">
+                <select name="day" class="day">
+                    <option value="today">Today</option>
+                    <option value="tomorrow">Tomorrow</option>
+                </select>
+            </div>
+          
+          <div class="time-dropdown">
+                <select name="time" class="time">
+                    <option value="ten-fifteen">10:15</option>
+                    <option value="ten-thirty">10:30</option>
+                    <option value="ten-fortyfive">10:45</option>
+                    <option value="eleven">11:00</option>
+                </select>
+            </div>
+           </div>
+          
+          <div class="start-order">
+            <a href="menu.html"><button class="redhover2"><h4>START ORDER</h4></button></a>
+          </div>
+          
+        </div>
+        </div>
+
+        <!--End of modal code -->
+
+
 
         <div class="menusection">
             <div class="sectionhead">
@@ -235,5 +277,6 @@
     </div>
     </div>
 
+    <script src="script/menu_modal.js"></script>
 </body>
 </html>

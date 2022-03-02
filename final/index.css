@@ -755,6 +755,7 @@ button.checkout {
 }
 
 
+
 /* Cart Payment Query */
 
 
@@ -1637,6 +1638,154 @@ h1.thanks {
 
 
 /*Menu*/
+
+
+/* Modal CSS */
+
+.modal {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.25);
+  }
+  
+  
+  .modal-close-btn {
+    position: absolute;
+    right: 1px;
+    top: -6px;
+    font-size: 20px;
+    background: none;
+    color: #4B5079;
+  }
+  
+  /** Overlay */
+  .overlay {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  /** JS */
+  .is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+
+  h4.modal-header {
+    margin-top: -0.5rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    color: #4B5079;
+  }
+  
+  /* .modal-header {
+  /*   background: #E9F2FF; 
+  } */
+  
+  .modal-dropdowns {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  select.day, select.time {
+    padding: 0.5rem;
+    color: #4B5079;
+    font-family: 'Gilroy-Bold';
+    border-color: #9193BC;
+    border-radius: 5px;
+  }
+  
+  .today {
+      border-radius: 5px;
+      background-color: #E9F2FF;
+      color: #4B5079;
+      font-family: "Gilroy-Bold";
+      border: none;
+      padding: 0.3rem 0.8rem;
+      margin: 0 0 0 8rem;
+  }
+  
+  
+  /* BUTTON */
+  
+  .start-order {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .start-order h4 {
+    margin: 0rem;
+    font-family: "Gilroy-Bold";
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  button.redhover2 {
+    border-radius: 5px;
+    color: #FFFFFF;
+  }
+  
+  
+  button.redhover2 {
+      background-color: #FF746B;
+      transition: 0.25s;
+      transition-timing-function: ease-in-out;
+  }
+  button.redhover:hover {
+      background-color: #777CAB;
+  }
+  button.checkout:active, button.redhover:active {
+      background-color: #E85454;
+  }
+
+  .time-dropdown {
+      font-family: "Gilroy-Bold";
+  }
+
+  .modal-header {
+    background: #E9F2FF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.time-modal {
+    padding-top: 2rem;
+}
+  
+
+  /* End of modal css */
+
+
+
+
+
 .ordertime {
     display: flex;
     justify-content: center;
