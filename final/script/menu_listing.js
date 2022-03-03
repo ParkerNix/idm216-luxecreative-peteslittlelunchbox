@@ -26,7 +26,7 @@ let foods = [
 ];
 
 
-let text = "";
+let textbreakfast = "";
 for (let i = 0; i < foods.length; i++) {
     let foodArray = foods[i];
 
@@ -35,9 +35,46 @@ for (let i = 0; i < foods.length; i++) {
     let foodName = foodArray[2];
     let foodCatnum = foodArray[3];
     let foodCat = categories[foodCatnum];
-    console.log('foodImage is ' + foodImage);
-
-    text += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+    console.log('foodCat is ' + foodCat);
+    if (foodCat == 'breakfast') {
+        textbreakfast += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        }
 }
 
-document.getElementById("demo").innerHTML = text;
+let textlunch = "";
+for (let i = 0; i < foods.length; i++) {
+    let foodArray = foods[i];
+
+    let foodImage = foodArray[0];
+    let foodPrice = foodArray[1];
+    let foodName = foodArray[2];
+    let foodCatnum = foodArray[3];
+    let foodCat = categories[foodCatnum];
+    if (foodCat == 'lunch') {
+    textlunch += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+    }
+}
+
+let textdrinks = "";
+for (let i = 0; i < foods.length; i++) {
+    let foodArray = foods[i];
+
+    let foodImage = foodArray[0];
+    let foodPrice = foodArray[1];
+    let foodName = foodArray[2];
+    let foodCatnum = foodArray[3];
+    let foodCat = categories[foodCatnum];
+    console.log(foodCatnum);
+    if (foodCat == 'drinks') {
+    textdrinks += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+    }
+}
+
+if (document.getElementById("lunchtime")) {
+document.getElementById("lunchtime").innerHTML = textlunch;
+console.log(textlunch);
+} else if (document.getElementById("breakfasttime")) {
+document.getElementById("breakfasttime").innerHTML = textbreakfast;
+} else if (document.getElementById("drinktime")) {
+document.getElementById("drinktime").innerHTML = textdrinks;
+}
