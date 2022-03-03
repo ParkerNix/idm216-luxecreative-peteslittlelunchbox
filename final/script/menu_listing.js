@@ -19,10 +19,10 @@ let foods = [
     ['images/cart_hashbrown_2x.png', '1.50', 'Hashbrown', 2],
     ['images/cart_thai_tea_2x.png', '2.50', 'Thai Tea', 2],
     ['images/cart_muffin_2x.png', '1.75', 'Muffin', 2],
-    ['images/thai_tea.png', '2.50', 'Thai Tea', 3],
-    ['images/hot_coffee.png', '2.50', 'Hot Coffee', 3],
-    ['images/tea.png', '2.50', 'Tea', 3],
-    ['images/hot_chocolate.png', '2.50', 'Hot Chocolate', 3]
+    ['images/thai_tea_3x.png', '2.50', 'Thai Tea', 3],
+    ['images/hot_coffee_3x.png', '2.50', 'Hot Coffee', 3],
+    ['images/tea_3x.png', '2.50', 'Tea', 3],
+    ['images/hot_chocolate_3x.png', '2.50', 'Hot Chocolate', 3]
 ];
 
 
