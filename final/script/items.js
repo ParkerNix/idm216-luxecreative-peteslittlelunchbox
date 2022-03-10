@@ -7,6 +7,6 @@ for (let i = 0; i < toppingsArray.length; i++) {
     let itemNum = toppingsArray[i];
     if (typeof(Storage) !== "undefined") {
         // Retrieve
-        itemNum.innerHTML = localStorage.getItem("text");
+        itemNum.innerHTML = localStorage.getItem("checktopping");
         }
 }
