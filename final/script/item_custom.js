@@ -26,6 +26,7 @@ function checkAddress()
             text += thename + ", ";
         }
     }
+    
     let additionalNotes = document.getElementById("additional-notes");
     let value = additionalNotes.value;
     text += value; 

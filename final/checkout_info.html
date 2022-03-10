@@ -17,6 +17,49 @@
         <span style="width: 24.55px;"></span>
     </div>
 
+      <!--Modal Code -->
+
+      <div class="overlay" id="overlay"></div>
+      <div class="modal" id="modal">
+  
+
+      <div class="time-modal">
+          <div class="modal-header">
+              <h4 class="modal-header">Change Pick Up Time</h4>
+      </div>
+
+      <button class="modal-close-btn" id="close-btn"><i class="fa fa-times" title="times"></i></button>
+        
+      <div class="modal-dropdowns">
+          <div class="day-dropdown">
+              <select name="day" class="day">
+                  <option value="today">Today</option>
+                  <option value="tomorrow">Tomorrow</option>
+              </select>
+          </div>
+        
+        <div class="time-dropdown">
+              <select name="time" class="time">
+                  <option value="10:15">10:15</option>
+                  <option value="10:30">10:30</option>
+                  <option value="10:45">10:45</option>
+                  <option value="11:00">11:00</option>
+              </select>
+          </div>
+         </div>
+        
+        <div class="start-order">
+          <button onclick="getOption()" class="redhover2"><h4>CONFIRM</h4></button>
+        </div>
+        
+      </div>
+      </div>
+
+      <!--End of modal code -->
+
+
+
+
 <div class="pickup-info">
     <div class="pickup-card">
         <img class="checkout-lunchbox" src="images/checkout_lunchbox.svg" alt="checkout-lunchbox">
@@ -24,9 +67,9 @@
         <h4 class="card-text">PICKUP INFO</h4>
         <h5 class="card-text" style="font-family:'Gilroy-Bold'; font-size: 1rem;">TOTAL $6.00</h5>
         <h5 class="card-text" style="font-size:0.875rem;">ESTIMATED PICKUP TIME</h5>
-        <h1 class="card-text" style="font-size:2rem;">12:00PM</h1>
+        <h1 class="card-text"><span class="output"></span></h1>
         <h5 class="card-text" style="font-family:'Gilroy'; font-size: 0.875rem; margin-bottom: 1rem;">10/27/21</h5>
-        <h5 class="card-text" style="font-family:'Gilroy-ExtraBold'; text-decoration: underline;  margin-bottom: 2rem;">EDIT PICKUP TIME:<img style="padding-left:0.3rem; width: 20px;" src="images/edit.svg" alt="edit"></h5>
+        <h5 class="card-text" id="modal-switch" style="font-family:'Gilroy-ExtraBold'; text-decoration: underline;  margin-bottom: 2rem;">EDIT PICKUP TIME:<img style="padding-left:0.3rem; width: 20px;" src="images/edit.svg" alt="edit"></h5>
         <h4 class="card-text"style="font-family:'Gilroy-Extrabold';">PICKUP LOCATION</h4>
         <h5 class="card-text" style="font-family: 'Gilroy'; font-size: 0.875rem;">11 N 33rd St, Philadelphia, PA 19104</h5>
         </div>
@@ -47,6 +90,7 @@
     <a href="track_order.html" class="pay redhover"><button class="pay redhover">TAP TO PAY</button></a>
 </div>
 
-
+<script src="script/checkout_modal.js"></script>
+<script src="script/change_pickup_time.js"></script>
 </body>
 </html>
