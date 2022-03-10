@@ -11,7 +11,7 @@ let options = [hoagie, pita, wrap, ketchup, salt, pepper, onions];
 
 function checkAddress()
 {
-    text = "";
+    checktopping = "";
     for (let i = 0; i < options.length; i++) {
         let thing = options[i];
         let thisthing = [...thing.attributes];
@@ -23,19 +23,17 @@ function checkAddress()
 
         if (thing.checked == true)
         {
-            text += thename + ", ";
+            checktopping += thename + ", ";
         }
     }
     
     let additionalNotes = document.getElementById("additional-notes");
     let value = additionalNotes.value;
-    text += value; 
-    console.log(text);
+    checktopping += value; 
         // Check browser support
         if (typeof(Storage) !== "undefined") {
             // Store
-            localStorage.setItem("text", text);
-            console.log(localStorage.getItem("text"));
+            localStorage.setItem("checktopping", checktopping);
             }
 }
 
