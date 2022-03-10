@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="normalizer.css">
     <title>Order | Pete's Little Lunch Box</title>
 </head>
 
@@ -104,29 +105,27 @@
             </div>
             <div class="scrollmenu">
                 <div class="menuitem">
+                                            <!--Hide Heart-->
+                                            <div class="hide">
+                                                <svg id="utility_like" viewBox="0 0 24.3 22.5" xmlns="http://www.w3.org/2000/svg">
+                                                    <path id="u-heart-fill" d="M12.2 22.5c-.2 0-.4-.1-.6-.2C4.4 18 .8 13.7.1 8.7-.4 5 1.6.7 6.5.1 9-.3 11 1 12.2 1.9c1.1-1 3.1-2.2 5.7-1.9 4.8.7 6.9 4.9 6.4 8.6-.7 5-4.3 9.3-11.4 13.7-.3.1-.5.2-.7.2z"/>
+                                                    <path id="u-heart-stroke" d="M12.2 22.5c-.2 0-.4-.1-.6-.2C4.4 18 .8 13.7.1 8.7-.4 5 1.6.7 6.5.1 9-.3 11 1 12.2 1.9c1.1-1 3.1-2.2 5.7-1.9 4.8.7 6.9 4.9 6.4 8.6-.7 5-4.3 9.3-11.4 13.7-.3.1-.5.2-.7.2zm-4.9-20h-.5C3.2 3 2.3 6.3 2.6 8.3c.4 2.6 1.8 6.5 9.6 11.5 7.8-4.9 9.2-8.9 9.6-11.5.3-2-.6-5.3-4.3-5.8-2.5-.4-4.4 1.9-4.4 1.9-.2.3-.6.4-1 .5-.4 0-.7-.2-1-.5 0 0-1.6-1.9-3.8-1.9z"/></svg>
+                                                </div>
+                                        
+                                            <span class="a-icon a-icon--heart js-heart">
+                                                <svg class="a-icon__asset" viewBox="0 0 24.3 22.5">
+                                                    <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </span>
                     <a href="edit_item.html" class="imgprice">
+                    <span class="pricetag">$7.00</span>
                         <img src="images/buffalo_cheesestake.png" alt="cheesesteak">
-
-                    <!--Hide Heart-->
-                        <div class="hide">
-                            <svg id="utility_like" viewBox="0 0 24.3 22.5" xmlns="http://www.w3.org/2000/svg">
-                              <path id="u-heart-fill" d="M12.2 22.5c-.2 0-.4-.1-.6-.2C4.4 18 .8 13.7.1 8.7-.4 5 1.6.7 6.5.1 9-.3 11 1 12.2 1.9c1.1-1 3.1-2.2 5.7-1.9 4.8.7 6.9 4.9 6.4 8.6-.7 5-4.3 9.3-11.4 13.7-.3.1-.5.2-.7.2z"/>
-                              <path id="u-heart-stroke" d="M12.2 22.5c-.2 0-.4-.1-.6-.2C4.4 18 .8 13.7.1 8.7-.4 5 1.6.7 6.5.1 9-.3 11 1 12.2 1.9c1.1-1 3.1-2.2 5.7-1.9 4.8.7 6.9 4.9 6.4 8.6-.7 5-4.3 9.3-11.4 13.7-.3.1-.5.2-.7.2zm-4.9-20h-.5C3.2 3 2.3 6.3 2.6 8.3c.4 2.6 1.8 6.5 9.6 11.5 7.8-4.9 9.2-8.9 9.6-11.5.3-2-.6-5.3-4.3-5.8-2.5-.4-4.4 1.9-4.4 1.9-.2.3-.6.4-1 .5-.4 0-.7-.2-1-.5 0 0-1.6-1.9-3.8-1.9z"/></svg>
-                          </div>
-                    
-                        <span class="a-icon a-icon--heart js-heart">
-                            <svg class="a-icon__asset" viewBox="0 0 24.3 22.5">
-                                <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                            </svg>
-                        </span>
-
-                        <span class="pricetag">$7.00</span>
                     </a>
-
-    
                     <h3>Buffalo Cheesesteak</h3>
                 </div>
+
+
                 <div class="menuitem">
                     <a href="edit_item.html" class="imgprice">
                         <img src="images/thai_tea_3x.png" alt="cheesesteak">
