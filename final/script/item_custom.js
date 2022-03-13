@@ -30,10 +30,13 @@ function checkAddress()
     let additionalNotes = document.getElementById("additional-notes");
     let value = additionalNotes.value;
     checktopping += value; 
+    let iteminfo = [textimg, updatetitle, updateprice]
+    let iteminfostring = iteminfo.toString();
         // Check browser support
         if (typeof(Storage) !== "undefined") {
             // Store
             localStorage.setItem("checktopping", checktopping);
+            localStorage.setItem("iteminfo", iteminfostring);
             }
 }
 

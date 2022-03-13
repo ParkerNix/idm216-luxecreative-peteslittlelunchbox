@@ -57,35 +57,37 @@ for (let i = 0; i < foods.length; i++) {
     let foodCatnum = foodArray[3];
     let foodCat = categories[foodCatnum];
     this["fooditem"+i] = [foodImage, foodPrice, foodName, foodCat];
-    console.log('foodCat is ' + foodCat);
     if (foodCat == 'breakfast') {
-        textbreakfast += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textbreakfast += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
         }
     if (foodCat == 'lunch') {
-        textlunch += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textlunch += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
         }
     if (foodCat == 'drinks') {
-        textdrinks += '<div class="menuitem"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textdrinks += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
         }
-}
-
-function nextPage(itemnum) {
-    
-}
-
-let itemArray = document.getElementsByClassName("menuitem");
-for (let i = 0; i < itemArray.length; i++) {
-    let item = itemArray[i];
-        
-    item.addEventListener('click', function() {nextPage(i)}, false);
 }
 
 if (document.getElementById("lunchtime")) {
 document.getElementById("lunchtime").innerHTML = textlunch;
-console.log(textlunch);
 } else if (document.getElementById("breakfasttime")) {
 document.getElementById("breakfasttime").innerHTML = textbreakfast;
 } else if (document.getElementById("drinktime")) {
 document.getElementById("drinktime").innerHTML = textdrinks;
 }
 
+function nextPage(itemnum) {
+    console.log(this["fooditem"+itemnum]);
+    let newitem = this["fooditem"+itemnum].toString();
+    console.log(newitem);
+    localStorage.setItem("newitem", newitem);
+}
+
+let itemArray = document.getElementsByClassName("menuitem");
+for (let i = 0; i < itemArray.length; i++) {
+    let item = itemArray[i];
+    let itemid = item.id;
+    console.log(item.id);
+        
+    item.addEventListener('mousedown', function() {nextPage(itemid)}, false);
+}
