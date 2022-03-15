@@ -2298,8 +2298,8 @@ hr.info {
 
 .save-changes {
     float: right;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     margin-right: 2rem;
 }
 
@@ -2307,29 +2307,18 @@ hr.info {
 
 
 @media screen and (min-width: 750px) {
-    .info-card {
-        background-color: #E9F2FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        border-radius: 10px;
+
+    .flexaccount {
+        float: left;
+        width: 50%;
+    }
+    .other-info {
+        float: left;
+        width: 93%;
     }
 
     .info-card2 {
-        background-color: #E9F2FF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        border-radius: 10px;
+        padding: 2.6rem 1rem;
     }
 
     h3.account, h3.card {
@@ -2340,9 +2329,9 @@ hr.info {
 
     .save-changes {
         float: right;
-        padding-top: 3rem;
-        padding-bottom: 1rem;
-        margin-right: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        margin-right: 4rem;
     }
 
     .info-buttons h4, .info-buttons2 h4, .save-changes h4 {
