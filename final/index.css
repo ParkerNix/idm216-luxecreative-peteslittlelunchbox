@@ -2131,6 +2131,14 @@ h1.thanks {
     justify-content: center;
     align-items: center;
 }
+
+.menusection .menuitem {
+        top: 0;
+    }
+
+.empty-recent img {
+    width: 200px;
+}
 /*
 .search {
     display: flex;
