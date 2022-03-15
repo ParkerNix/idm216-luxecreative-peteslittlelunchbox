@@ -1093,6 +1093,64 @@ b.login {
 }
 
 
+@media screen and (min-width: 1280px) {
+
+    .logincontainer {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        flex-direction: row;
+    }
+
+    .login-lunchbox img {
+        width: 310.99px;
+        height: 236.08px;
+    }
+
+    #uname, #psw {
+        width: 26.392rem;
+        margin-top: 1rem;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px; 
+    }
+
+    #loginbutton {
+        margin-top: 2rem;
+        padding: .6rem 1rem;
+        width: 6.563rem;
+        font-size:0.75rem;
+        font-weight: bold;
+        border-radius: 5px;
+        align-self: center;
+    }
+
+    .loginlink {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #4B5079;
+        padding-top: 2rem;
+    }
+
+    .loginlink a {
+        font-size: 1.5rem;
+        font-family: 'Gilroy-ExtraBold';
+    }
+
+    .psw {
+        font-size: 1.25rem;
+    }
+
+    #uname, #psw {
+        font-family: 'Gilroy';
+        color: #777CAB;
+        font-size: 1.25rem;
+    }
+
+}
+
 
 
 
