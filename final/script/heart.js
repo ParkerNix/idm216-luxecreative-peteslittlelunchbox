@@ -1,5 +1,7 @@
 let jsheartno = document.getElementsByClassName('js-heart');
-let jsheart = jsheartno[0];
 
-jsheart.addEventListener('click', function () {
-jsheart.classList.toggle('is-active'); }, false);
+for (let i=0; i < jsheartno.length; i++) {
+    let jsheart = jsheartno[i];
+    jsheart.addEventListener('click', function () {
+    jsheart.classList.toggle('is-active'); }, false);
+}

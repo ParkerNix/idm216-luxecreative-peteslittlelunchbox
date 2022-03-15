@@ -1698,7 +1698,7 @@ h1.thanks {
     transition: 0.2s ease-in-out opacity;
   }
   .a-icon--heart .a-icon--heart__fill {
-    fill: #DB3126;
+    fill: #f53d37;
     opacity: 0;
     transform: translateZ(0);
     transition: 0.2s ease-in-out opacity;
