@@ -116,7 +116,7 @@ button {
 }
 
 button.redhover {
-    background-color: #FF746B;
+    background-color: #FF645A;
     transition: 0.25s;
     transition-timing-function: ease-in-out;
 }
@@ -243,10 +243,9 @@ button.checkout:active, button.redhover:active {
 {
   z-index: 10;
   position: absolute;
-  width: 120vw;
+  width: 106vw;
   margin: -100px 0 0 -50px;
-  padding: 50px 0 50px 50px;
-  padding-top: 125px;
+  padding: 130px 0 50px 70px;
   height: 120vh;
   background: #E9F2FF;
   list-style-type: none;
@@ -257,6 +256,7 @@ button.checkout:active, button.redhover:active {
     transform: translate(-100%, 0);
   
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
 }
 
 #menu li {
@@ -264,6 +264,11 @@ button.checkout:active, button.redhover:active {
     font-size: 35px;
     color: #4B5079;
     padding: 20px 0;
+}
+
+#menu, .menu-lunchbox, #menu li {
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 /*
@@ -276,7 +281,7 @@ button.checkout:active, button.redhover:active {
 .menu-lunchbox {
     position: relative;
     top: 400px;
-    left: -110px;
+    left: -30px;
 }
 
 
@@ -376,6 +381,7 @@ li.underline {
         height: 3px;
         margin-bottom: 6px;
         position: relative;
+
       
         background: #4B5079;
         border-radius: 3px;
@@ -387,6 +393,22 @@ li.underline {
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;
+    }
+
+    #menu{
+    width: 500px;
+    box-shadow: 0px 4px 10px #41275215;
+    height: 106vh;
+    }
+
+    #menu li {
+        font-size: 2.8rem;
+    }
+
+    .menu-lunchbox {
+        position: relative;
+        top: 480px;
+        left: -70px;
     }
 
 }
@@ -407,14 +429,14 @@ li.underline {
 }
 
 .about_img h1 {
-    padding-top: 1rem;
+    padding-top: 0rem;
 }
 
 .about-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1.3rem;
 }
 
 .about-card {
@@ -423,14 +445,12 @@ li.underline {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20rem;
-    height: 15.063rem;
+    padding: 1rem 5rem;
     box-shadow: 0px 4px 10px #41275215;
 }
 
 .about-card-text {
     text-align: center;
-    padding-top: 0.8rem;
 }
 
 
@@ -442,7 +462,7 @@ li.underline {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    margin-top: 3rem;
 }
 
 .about-card-text h4 {
@@ -473,13 +493,8 @@ li.underline {
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 30rem;
-        height: 25.063rem;
+        padding: 2rem 8rem;
         box-shadow: 0px 4px 10px #41275215;
-    }
-
-    .about-card-text {
-       padding-top: 3rem;
     }
 
     .about-card-text h4 {
@@ -1246,7 +1261,6 @@ h5#modal-switch:hover {
     }
 
 }
-
 
 
 
@@ -2196,7 +2210,7 @@ h3.card {
 
 .info-buttons h4, .info-buttons2 h4, .save-changes h4 {
     margin: 0;
-    color: #F2F7FF;
+    color: white;
     font-size: 10px;
 }
 
@@ -2324,7 +2338,7 @@ hr.info {
 
     .info-buttons h4, .info-buttons2 h4, .save-changes h4 {
         margin: 0;
-        color: #F2F7FF;
+        color: white;
         font-size: 12px;
     }
 
