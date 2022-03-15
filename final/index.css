@@ -403,11 +403,11 @@ li.underline {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 3.2rem;
 }
 
 .about_img h1 {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .about-info {
@@ -452,6 +452,15 @@ li.underline {
 .about-card-text p {
     margin-top: -1rem;
 }
+
+.location-banner>a {
+    text-decoration: none;
+}
+
+.tracklocation:hover {
+    background-color: #4B5079;
+}
+
 
 /* About Info Query */
 
@@ -530,7 +539,7 @@ button.edit:active, button.remove:active {
     background-color: #F2F7FF;
 }
 
-button.tip, .tipClicked {
+button.tip, .tipClicked, .tracklocation {
     padding: .4rem 1rem;
     transition: 0.25s;
     transition-timing-function: ease-in-out;
