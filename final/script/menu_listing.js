@@ -58,21 +58,23 @@ for (let i = 0; i < foods.length; i++) {
     let foodCat = categories[foodCatnum];
     this["fooditem"+i] = [foodImage, foodPrice, foodName, foodCat];
     if (foodCat == 'breakfast') {
-        textbreakfast += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textbreakfast += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
     if (foodCat == 'lunch') {
-        textlunch += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textlunch += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"><svg class="a-icon__asset" viewBox="0 0 24.3 22.5"><use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use><use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
     if (foodCat == 'drinks') {
-        textdrinks += '<div class="menuitem" id="' + i + '"> <a href="edit_item.html" class="imgprice"> <img src="' +  foodImage + '" alt="' + foodName + '"> <span class="heart"><i style="width: 40px;" class="fa fa-heart-o fa-lg" aria-hidden="true"></i></span> <span class="pricetag">$' + foodPrice + '</span> </a> <h3>' + foodName + '</h3> </div>';
+        textdrinks += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
 }
 
 if (document.getElementById("lunchtime")) {
 document.getElementById("lunchtime").innerHTML = textlunch;
-} else if (document.getElementById("breakfasttime")) {
+} 
+if (document.getElementById("breakfasttime")) {
 document.getElementById("breakfasttime").innerHTML = textbreakfast;
-} else if (document.getElementById("drinktime")) {
+} 
+if (document.getElementById("drinktime")) {
 document.getElementById("drinktime").innerHTML = textdrinks;
 }
 
