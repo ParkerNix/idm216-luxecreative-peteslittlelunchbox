@@ -184,7 +184,7 @@ button.checkout:active, button.redhover:active {
  */
 #menuToggle span    {
     display: block;
-    width: 29px;
+    width: 16.5px;
     height: 2px;
     margin-bottom: 3px;
     position: relative;
@@ -372,7 +372,7 @@ li.underline {
 
     #menuToggle span    {
         display: block;
-        width: 30.5px;
+        width: 29px;
         height: 3px;
         margin-bottom: 6px;
         position: relative;
