@@ -755,7 +755,7 @@ input.coupon_code {
 
 
 .total {
-    padding: 1.5rem 2rem 0;
+    margin: 1.5rem 2rem 0;
 }
 
 .tips {
@@ -780,8 +780,7 @@ button.checkout {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding-left: 2.5rem;
-    padding-right: 6rem;
+
 }
 
 
@@ -822,7 +821,7 @@ button.checkout {
     margin: 0 0 0 .5rem;
 }
 
-.price h3, .total_price h3, .code h2, .title, .itemdetails h3 {
+.price h3, .total_price h3, .code h2, .title, .itemdetails h3, .tipClicked{
     font-size: 1.2rem;
 }
 
@@ -845,9 +844,16 @@ button.tip{
 }
 
 .continue_center {
-    padding: .6rem 7rem;
+    padding: .6rem 9.2rem;
     border-radius: 5px;
 }
+
+/* .totalcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+} */
 
 }
 
