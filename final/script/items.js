@@ -12,6 +12,8 @@ let removebuttonarray = document.getElementsByClassName('remove');
 let editbuttonarray = document.getElementsByClassName('edit');
 let cart = document.getElementById("cart");
 
+let subtotal = 0.0;
+
 for (let i=0; i<localStorage.length; i++) {
 cart.innerHTML += '<div class="cartitem"><div class="itemimg"><img src="images/cart_cheesestake_2x.png" alt="cheesestake"></div><div class="itemdetails"><div class="itemdesc"><div class="desctext"><h3 class="title">Cheesesteak</h3><p class="toppings">Hoagie, Salt, Pepper, Ketchup</p></div><h3 style="margin: 0;" class="itemprice">$6.00</h3></div><div class="itembuttons"><button class="edit">EDIT</button><button class="remove">REMOVE</button><div class="custom-select"><select name="qty"><option value="0">1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div></div></div></div>';
 let thiskey = localStorage.key(i);
@@ -21,9 +23,11 @@ console.log(this["allitem" + i]);
 console.log(this["allitem" + i][3]);
 this["iteminfo" + i] = [this["allitem" + i][0], this["allitem" + i][3], this["allitem" + i][4], this["allitem" + i][5]];
 this["checktopping" + i] = this["allitem" + i][6];
+this["price" + i] = parseFloat(this["iteminfo" + i][1]);
+subtotal += this["price" + i];
 }
 
-console.log(toppingsArray);
+console.log(subtotal);
 for (let i = 0; i < toppingsArray.length; i++) {
     let itemNum = toppingsArray[i];
     let titlenum = titlearray[i];
