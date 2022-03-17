@@ -43,6 +43,7 @@ let foods = [
 let textbreakfast = "";
 let textlunch = "";
 let textdrinks = "";
+let textfavs = "";
 for (let i = 0; i < foods.length; i++) {
     let foodArray = foods[i];
 
@@ -51,8 +52,13 @@ for (let i = 0; i < foods.length; i++) {
     let foodName = foodArray[2];
     let foodCatnum = foodArray[3];
     let foodEdit = foodArray[4];
+    let foodwherenum = foodArray[5];
     let foodCat = categories[foodCatnum];
+    let isfav = where[foodwherenum];
     this["fooditem"+i] = [foodImage, foodPrice, foodName, foodEdit];
+    if (isfav == 'favs') {
+        textfavs += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
+    }
     if (foodCat == 'breakfast') {
         textbreakfast += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
@@ -64,6 +70,11 @@ for (let i = 0; i < foods.length; i++) {
         }
 }
 
+console.log(textfavs);
+
+if (document.getElementById("fav")) {
+    document.getElementById("fav").innerHTML = textfavs;
+    } 
 if (document.getElementById("lunchtime")) {
 document.getElementById("lunchtime").innerHTML = textlunch;
 } 
