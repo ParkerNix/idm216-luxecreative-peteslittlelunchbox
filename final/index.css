@@ -1559,6 +1559,34 @@ button.add-to-cart {
 
 
 
+@media screen and (min-width: 750px) {
+
+    .econtainer {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .edit-item-container {
+        width: 70%;
+    }
+
+    .menu-item-img img {
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* .desktop-card {
+        display: flex;
+        flex-direction: row;
+    } */
+
+}
+
+
 /* Track Order Page */
 
 .location-banner {
