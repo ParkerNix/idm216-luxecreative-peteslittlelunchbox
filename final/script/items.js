@@ -6,9 +6,12 @@ let titlearray = document.getElementsByClassName('title');
 let itemimgarray = document.getElementsByClassName('itemimg');
 let itempricearray = document.getElementsByClassName('itemprice');
 
-
-let iteminfostring = localStorage.getItem('iteminfo');
-let iteminfo = iteminfostring.split(',');
+for (i=0; i<localStorage.length; i++) {
+this["allitemstring" + i] = localStorage.getItem('newitem');
+this["allitem" + i] = this["allitemstring" + i].split(',');
+this["iteminfostring" + i] = this["allitem" + i][0];
+this[iteminfo + i] = this[iteminfostring + i].split(',');
+}
 
 console.log(toppingsArray);
 for (let i = 0; i < toppingsArray.length; i++) {

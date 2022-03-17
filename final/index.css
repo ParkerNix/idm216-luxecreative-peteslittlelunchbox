@@ -995,6 +995,7 @@ hr.menu3 {
     .cobutton {
         padding-top: 2.5rem;
         padding-right: 1rem;
+    }
 
 
 }
@@ -1053,7 +1054,7 @@ h2.welcome {
 #login {
     font-family: 'Gilroy-Bold';
     color: #777CAB;
-    font-size: 0.75rem
+    font-size: 0.75rem;
 }
 
 #loginbutton {
@@ -2569,8 +2570,3 @@ hr.info {
 
 
 }
-
-
-
-
-
