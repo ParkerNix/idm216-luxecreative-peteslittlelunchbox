@@ -521,6 +521,32 @@ li.underline {
     }
 }
 
+@media screen and (min-width: 1280px) {
+
+
+    .adesktop-flex {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        padding-top: 3rem;
+        align-items: center;
+    }
+
+    img.about {
+        width: 250px;
+    }
+
+    .about-card {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 6rem;
+        box-shadow: 0px 4px 10px #41275215;
+    }
+    
+}
 
 
 
@@ -865,27 +891,31 @@ button.tip{
 @media screen and (min-width: 1280px) {
 
 
-.cdesktop-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+    .cdesktop-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 
-.cart-container, .totalcontainer {
-    width: 40%;
-}
+    .cart-container, .totalcontainer {
+        width: 40%;
+    }
 
-.coupon_code {
-    background-color: #FFFFFF;
-    font-family: 'Gilroy';
-    border: 1.5px solid #899BC7;
-    color: #899BC7;
-    border-radius: 5px;
-    width: 200px;
-    padding: 0.5rem 1.2rem;
+    .coupon_code {
+        background-color: #FFFFFF;
+        font-family: 'Gilroy';
+        border: 1.5px solid #899BC7;
+        color: #899BC7;
+        border-radius: 5px;
+        width: 200px;
+        padding: 0.5rem 1.2rem;
+    }
 
-}
+    .ecdesktop-flex {
+        display: flex;
+        justify-content: center;
+    }
 
 }
 
@@ -1077,7 +1107,7 @@ hr.menu3 {
         border: 1px solid #EDF0F4;
         border-radius: 10px;
         margin-left: 1.5rem;
-        padding: 2rem 1rem 0 1rem;
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     .total .cobutton {
@@ -1088,6 +1118,17 @@ hr.menu3 {
         padding-top: 2.5rem;
         padding-right: 1rem;
 }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cobutton {
+        padding-top: 2.5rem;
+        padding-right: 1rem;
+        display: flex;
+        justify-content: center;
+}
+
 }
 
 
