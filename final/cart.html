@@ -37,8 +37,9 @@
         <h2>Review Order</h2>
         <img class="cart_icon" style="opacity:0;" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon">
     </div>
-    <div class="cart">
-        <div class="cartitem">
+    <div class="middle">
+    <div class="cart" id="cart">
+        <!--<div class="cartitem">
             <div class="itemimg">
                 <img src="images/cart_cheesestake_2x.png" alt="cheesestake">
             </div>
@@ -64,11 +65,16 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
-    <a class="continue_shopping" href="menu_1cart.html">CONTINUE SHOPPING</a>
+    </div>
+    <div class="please">
+    <div class="continue_center">
+    <h2 class="continue_shopping">Need a Drink?</h2>
+    </div>
+    </div>
     <div class="middle">
-    <div class="addons">
+    <div class="addons" id="drinktime">
         <div class="additem">
             <div class="itemimg">
                 <img src="images/cart_hashbrown_2x.png">
@@ -107,14 +113,18 @@
         </div>
     </div>
     </div>
+    <div class="continue_button">
+        <a href="menu_1cart.html"><button class="redhover">CONTINUE SHOPPING</button></a>
+    </div>
+    <div class="totalcontainer">
     <div class="total">
         <div class="price">
             <h3>Subtotal</h3>
-            <h3>$6.00</h3>
+            <h3>$<span id="subtotal">6.00</span></h3>
         </div>
         <div class="price">
             <h3>Tip Amount</h3>
-            <h3>+$0.00</h3>
+            <h3>+$<span id="tip">0.00</span></h3>
         </div>
         <div class="tips">
             <div class="tip">
@@ -126,26 +136,23 @@
             <div class="tip">
                 <button class="tip" id="tip3">20%</button>
             </div>
-            <div class="tip">
-                <button class="tip" style="width: 120px; padding: .4rem 0;" id="tip4">Custom Tip</button>
-            </div>
         </div>
         <div class="total_price">
             <h3>Total</h3>
-            <h3>$6.00</h3>
+            <h3>$<span id="total">6.00</span></h3>
         </div>
-    </div>
     <div class="code">
     <h2>Add Coupon Code</h2>
     <input class="coupon_code" type="text" placeholder="code"></input>
     </div>
+    </div>
+    </div>
 
     <div class="cobutton">
         <a href="log_in.html" class="redhover">
-        <button class="checkout redhover">Checkout</button>
+        <button class="checkout redhover">CHECKOUT</button>
         </a>
     </div>
-    <script src="script/petes.js"></script>
     <script>
         var x, i, j, l, ll, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -226,6 +233,8 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
         </script>
+        <script src="script/menu_listing.js"></script>
         <script src="script/items.js"></script>
+        <script src="script/petes.js"></script>
 </body>
 </html>

@@ -543,11 +543,12 @@ li.underline {
 button.edit, button.remove, button.tip, .tipClicked {
     background-color: #FFFFFF;
     font-family: 'Gilroy-Bold';
-    font-size: 12px;
+    font-size: 14px;
     border: 1.5px solid #4B5079;
     color: #4B5079; 
     border-radius: 5px;
     padding: .1rem 0.7rem;
+    text-shadow: none;
 }
 
 button.edit:active, button.remove:active {
@@ -566,19 +567,22 @@ button.tip, .tipClicked, .tracklocation {
     padding: 0.6rem 1.2rem;
 }
 
-.continue_shopping  {
+.continue_shopping {
     font-family: "Gilroy-Bold";
     color: #4B5079;
-    font-size: 16px;
+    font-size: 1.1rem;
+}
+
+.continue_center {
+    background-color: #E9F2FF;
     display: flex;
     justify-content: center;
+    justify-items: center;
+    font-size: 20px;
     margin-top: 2rem;
-    padding: 1.3rem 0;
-    border-style: none none solid none;
-    border-color: #EDF0F4;
-    border-width: 0 0 2px 0;
-    background-color: #E9F2FF;
-    text-decoration: none;
+    padding: .8rem 0;
+    
+    
 }
 
 .continue_shopping:visited {
@@ -589,6 +593,12 @@ button.tip, .tipClicked, .tracklocation {
 a.continue_shopping:hover {
     font-family:"Gilroy-Bold";
     color: #FF645A;
+}
+
+.continue_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .coupon_code {
@@ -671,8 +681,12 @@ input.coupon_code {
   }
 
 .itemimg img {
-    width: 100px;
+    width: 100%;
     height: 100px;
+    object-fit: cover;
+    object-position: 30% 10%;
+    border-radius: 5px;;
+
 }
 
 .addons {
@@ -680,9 +694,6 @@ input.coupon_code {
     flex-direction: row;
     gap: 1rem;
     padding: 2rem 0 .5rem;
-    border-style: solid none none none;
-    border-color: #EDF0F4;
-    border-width: 2px 0 0 0;
     overflow: scroll;
     margin: 0 2rem;
 
@@ -710,13 +721,14 @@ input.coupon_code {
 
 .itembuttons {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     gap: 0.5rem;
 }
 
 .cart {
     margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .cartitem {
@@ -749,7 +761,7 @@ input.coupon_code {
 
 
 .total {
-    padding: 1.5rem 2rem 0;
+    margin: 1.5rem 2rem 0;
 }
 
 .tips {
@@ -774,8 +786,7 @@ button.checkout {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding-left: 2rem;
-    padding-right: 6rem;
+
 }
 
 
@@ -783,7 +794,13 @@ button.checkout {
 /* Cart Payment Query */
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 530px) {
+
+.cartitem img {
+    width: 80%;
+    height: 100%;
+    max-height: 150px;
+}
 
 .cart {
     display: flex;
@@ -798,12 +815,10 @@ button.checkout {
     border-color: #EDF0F4;
     border-width: 2px 0 2px 0;
     padding: 2rem 0;
-    max-width: 448px;
-    gap: 7rem;
+    max-width: 600px;
 }
 
 .addons {
-    justify-content: center;
     max-width: 700px;
 }
 
@@ -811,7 +826,42 @@ button.checkout {
     margin: 0 0 0 .5rem;
 }
 
+.price h3, .total_price h3, .code h2, .title, .itemdetails h3, .tipClicked{
+    font-size: 1.2rem;
 }
+
+button.tip{
+    font-size: 16px;
+}
+
+.title {
+    width: 29vw;
+    max-width: 280px;
+}
+
+.continue_shopping {
+    font-size: 1.3rem;
+}
+
+.please {
+    display: flex;
+    justify-content: center;
+}
+
+.continue_center {
+    padding: .6rem 9.2rem;
+    border-radius: 5px;
+}
+
+/* .totalcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+}
+
 
 
 
@@ -922,7 +972,7 @@ hr.menu3 {
     justify-content: right;
 }
 
-@media screen and (min-width: 750px) and (max-width: 1280px) {
+@media screen and (min-width: 600px) and (max-width: 1070px) {
 
     .order-details-container {
         width: 50%
@@ -933,10 +983,20 @@ hr.menu3 {
         display: flex;
         justify-content: center;
     }
+    .ocontainer h1 {
+        font-size: 28px;
+    }
+    .cartitem2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 1rem;
+        gap: 0.5rem;
+    }
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1070px) {
 
     .ocontainer {
         padding-top: 5rem;
@@ -990,6 +1050,11 @@ hr.menu3 {
         border: 1px solid #EDF0F4;
         border-radius: 10px;
         margin-left: 1.5rem;
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    .total .cobutton {
+        padding: 0;
     }
 
     .cobutton {
@@ -1003,11 +1068,12 @@ hr.menu3 {
 /* LOG IN PAGE */
 
 .logincontainer {
-    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
 }
 
 h4.petes {
@@ -1052,7 +1118,7 @@ h2.welcome {
 #login {
     font-family: 'Gilroy-Bold';
     color: #777CAB;
-    font-size: 0.75rem
+    font-size: 0.75rem;
 }
 
 #loginbutton {
@@ -1099,14 +1165,6 @@ b.login {
 
 
 @media screen and (min-width: 750px) {
-
-    .logincontainer {
-        margin-top: 12rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     h4.petes {
         color: #FF746B;
@@ -1184,10 +1242,6 @@ b.login {
 @media screen and (min-width: 1280px) {
 
     .logincontainer {
-        margin-top: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 10rem;
         flex-direction: row;
     }
@@ -1265,7 +1319,8 @@ h2.nav {
     align-items: center;
     flex-direction: column;
     width: 19.25rem;
-    height: 23.938rem;
+    height: 23rem;
+    padding-top: 1.5rem;
     box-shadow: 0px 4px 10px #41275215;
 }
 
@@ -1357,7 +1412,6 @@ h5#modal-switch:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 5rem;
     }
 
     h5.card-text {
@@ -1409,12 +1463,15 @@ h5#modal-switch:hover {
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1000px) {
 
     .pickup-desktop {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+
     }
 
     .credit-card-info {
@@ -1422,6 +1479,8 @@ h5#modal-switch:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: 3rem;
+        
     }
 
 }
@@ -1437,9 +1496,10 @@ h5#modal-switch:hover {
 
 .menu-item-img img {
 /* width: 23.438rem; */
-    height: 100%;
+    height: 300px;
     width: 100%; 
-    object-fit: contain
+    object-fit: cover;
+    object-position: 20% 10%;
 }
 
 .menu-item-description {
@@ -1651,7 +1711,7 @@ button.add-to-cart {
 
 
 #additional-notes {
-    width: 85%;
+    width: 100%;
     margin-bottom: 6rem;
     background: #FFFFFF;
     border: 1px solid #DCE0E4;
@@ -1676,12 +1736,26 @@ button.add-to-cart {
     }
 
     .menu-item-img img {
-        border-radius: 5px;
-    }
+        /* width: 23.438rem; */
+            border-radius: 5px;
+            height: 100%;
+            width: 100%; 
+            object-fit: contain;
+            height: 400px;
+            width: 100%; 
+            object-fit: cover;
+            object-position: 20% 20%;
+        }
 
 }
 
 @media screen and (min-width: 1280px) {
+    .menu-item-img img {
+            height: 100%;
+            width: 100%; 
+            object-fit: contain;
+        }
+
 
     /* .desktop-card {
         display: flex;
@@ -2568,8 +2642,3 @@ hr.info {
 
 
 }
-
-
-
-
-
