@@ -1052,11 +1052,12 @@ hr.menu3 {
 /* LOG IN PAGE */
 
 .logincontainer {
-    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
 }
 
 h4.petes {
@@ -1149,14 +1150,6 @@ b.login {
 
 @media screen and (min-width: 750px) {
 
-    .logincontainer {
-        margin-top: 12rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
     h4.petes {
         color: #FF746B;
         text-align: center;
@@ -1233,10 +1226,6 @@ b.login {
 @media screen and (min-width: 1280px) {
 
     .logincontainer {
-        margin-top: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 10rem;
         flex-direction: row;
     }
