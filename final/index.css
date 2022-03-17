@@ -1921,6 +1921,7 @@ h1.thanks {
     font-family: "Gilroy-Bold";
     padding-left: 0.3rem;
     padding-right: 0.3rem;
+    color: white;
   }
 
   button.redhover2 {
@@ -1930,7 +1931,7 @@ h1.thanks {
   
   
   button.redhover2 {
-      background-color: #FF746B;
+      background-color: #FF645A;
       transition: 0.25s;
       transition-timing-function: ease-in-out;
   }
@@ -2212,11 +2213,19 @@ h1.thanks {
 .lunchhead {
     display: flex;
     background-color: #E6EFFF;
-    height: 117px;
+    height: 170px;
     justify-content: center;
     align-items: center;
 }
 
+.menusection .menuitem {
+        top: 0;
+    }
+
+.empty-recent img {
+    width: 200px;
+}
+/*
 .search {
     display: flex;
     justify-content: center;
@@ -2233,7 +2242,7 @@ h1.thanks {
     border: none;
     margin: 1rem 0;
     padding: 0 1rem;
-}
+}*/
 
 
 @media screen and (min-width: 750px) {
@@ -2352,11 +2361,19 @@ input#email {
 
 .other-info h2 {
     margin: 0;
-    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Gilroy-Bold';
+    padding: 1.3rem;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
 }
 
 .other-info h2:active {
     background-color: #F2F7FF;
+}
+.other-info h2:hover {
+    background-color: #F2F7FF;
+    cursor: pointer;
 }
 
 hr.info {
@@ -2375,8 +2392,8 @@ hr.info {
 
 .save-changes {
     float: right;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     margin-right: 2rem;
 }
 
@@ -2384,29 +2401,18 @@ hr.info {
 
 
 @media screen and (min-width: 750px) {
-    .info-card {
-        background-color: #E9F2FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        border-radius: 10px;
+
+    .flexaccount {
+        float: left;
+        width: 50%;
+    }
+    .other-info {
+        float: left;
+        width: 93%;
     }
 
     .info-card2 {
-        background-color: #E9F2FF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        border-radius: 10px;
+        padding: 2.6rem 1rem;
     }
 
     h3.account, h3.card {
@@ -2417,9 +2423,9 @@ hr.info {
 
     .save-changes {
         float: right;
-        padding-top: 3rem;
-        padding-bottom: 1rem;
-        margin-right: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        margin-right: 4rem;
     }
 
     .info-buttons h4, .info-buttons2 h4, .save-changes h4 {
