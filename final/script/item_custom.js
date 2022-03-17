@@ -35,8 +35,11 @@ function checkAddress()
         // Check browser support
         if (typeof(Storage) !== "undefined") {
             // Store
-            localStorage.setItem("checktopping", checktopping);
-            localStorage.setItem("iteminfo", iteminfostring);
+            localStoragenum = localStorage.length;
+            let allitem = [iteminfostring, checktopping]
+            let allitemstring = allitem.toString();
+            infostring += "iteminfo" + localStoragenum;
+            localStorage.setItem("newitem", allitemstring);
             }
 }
 

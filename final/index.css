@@ -901,6 +901,17 @@ hr.menu2 {
     text-align: center;
 }
 
+hr.menu3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: #EDF0F4;
+    border: none;
+    height: 1px;
+    text-align: center;
+    display: none;
+}
+
 .cartitem2 {
     display: flex;
     justify-content: center;
@@ -956,6 +967,85 @@ hr.menu2 {
     justify-content: right;
 }
 
+@media screen and (min-width: 750px) and (max-width: 1280px) {
+
+    .order-details-container {
+        width: 50%
+    }
+
+    .ocontainer {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .ocontainer {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .odesktop-flex {
+        display: flex;
+    }
+
+    .test {
+        margin-top: -1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    hr.menu3 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        background-color: #EDF0F4;
+        border: none;
+        height: 1px;
+        text-align: center;
+        display: block;
+    }
+
+    hr.menu4 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        background-color: #EDF0F4;
+        border: none;
+        height: 1px;
+        text-align: center;
+        display: block;
+    }
+
+    .price2 {
+        display: flex;
+        justify-content: right;
+        padding-left: 8rem;
+        align-items: left;
+        flex-direction: column;
+    }
+
+    .total {
+        border: 1px solid #EDF0F4;
+        border-radius: 10px;
+        margin-left: 1.5rem;
+    }
+
+    .cobutton {
+        padding-top: 2.5rem;
+        padding-right: 1rem;
+    }
+
+
+}
+
+
 
 /* LOG IN PAGE */
 
@@ -1009,7 +1099,7 @@ h2.welcome {
 #login {
     font-family: 'Gilroy-Bold';
     color: #777CAB;
-    font-size: 0.75rem
+    font-size: 0.75rem;
 }
 
 #loginbutton {
@@ -1366,6 +1456,22 @@ h5#modal-switch:hover {
 }
 
 
+@media screen and (min-width: 1280px) {
+
+    .pickup-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .credit-card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 
 /* Edit Menu Item */
@@ -1602,6 +1708,34 @@ button.add-to-cart {
 }
 
 
+
+
+@media screen and (min-width: 750px) {
+
+    .econtainer {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .edit-item-container {
+        width: 70%;
+    }
+
+    .menu-item-img img {
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* .desktop-card {
+        display: flex;
+        flex-direction: row;
+    } */
+
+}
 
 
 /* Track Order Page */
@@ -2481,8 +2615,3 @@ hr.info {
 
 
 }
-
-
-
-
-
