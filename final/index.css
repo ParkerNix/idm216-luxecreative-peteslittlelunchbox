@@ -862,6 +862,33 @@ button.tip{
 
 }
 
+@media screen and (min-width: 1280px) {
+
+
+.cdesktop-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-container, .totalcontainer {
+    width: 40%;
+}
+
+.coupon_code {
+    background-color: #FFFFFF;
+    font-family: 'Gilroy';
+    border: 1.5px solid #899BC7;
+    color: #899BC7;
+    border-radius: 5px;
+    width: 200px;
+    padding: 0.5rem 1.2rem;
+
+}
+
+}
+
 
 
 
@@ -2676,6 +2703,5 @@ hr.info {
     img.back {
         width: 20px;
     }
-
 
 }
