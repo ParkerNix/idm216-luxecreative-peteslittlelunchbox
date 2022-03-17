@@ -1,9 +1,9 @@
 let categories = ['breakfast', 'lunch', 'sides', 'drinks'];
-let location = ['nothing', 'petesfav', 'addon'];
+
 
 let foods = [
     ['images/bacon_egg_cheese.png', '6.00', 'Bacon Egg and Cheese', 0, 'images/edit_items/bacon_egg_cheese.png', 0],
-    ['images/bacon_egg_cheese_hashbrown.png', '6.00', 'Bacon Egg and Cheese with Hashbrown', 0, 'images/edit_items/bacon_egg_cheese_hashbrown.png', 0],
+    ['images/bacon_egg_cheese_hashbrown.png', '6.00', 'Bacon Egg and Cheese with Hashbrown', 0, 'images/edit_items/bacon_egg_cheese_hashbrown.png', 1],
     ['images/steak_egg_cheese.png', '7.00', 'Steak Egg and Cheese', 0, 'images/edit_items/steak_egg_cheese.png', 0],
     ['images/ham_egg_cheese_3x.png', '5.00', 'Ham Egg and Cheese', 0, 'images/edit_items/ham_egg_cheese.png', 0],
     ['images/egg_scrapple.png', '5.00', 'Egg Scrapple', 0, 'images/edit_items/egg_scrapple.png', 0],
@@ -12,20 +12,20 @@ let foods = [
     ['images/sausage_egg_cheese_3x.png', '5.00', 'Sausage Egg and Cheese', 0, 'images/edit_items/sausage_egg_cheese.png', 0],
     ['images/porkroll_egg_cheese_3x.png', '5.00', 'Pork Roll Egg and Cheese', 0, 'images/edit_items/porkroll_egg_cheese.png', 0],
     ['images/hot_sausage_egg_cheese_3x.png', '6.00', 'Hot Sausage Egg and Cheese', 0, 'images/edit_items/hot_sausage_egg_cheese.png', 0],
-    ['images/cheesesteak.png', '6.00', 'Cheesesteak', 1, 'images/edit_items/cheesesteak.png', 0],
+    ['images/cheesesteak.png', '6.00', 'Cheesesteak', 1, 'images/edit_items/cheesesteak.png', 1],
     ['images/bacon_cheeseburger.png', '5.00', 'Bacon Cheeseburger', 1, 'images/edit_items/bacon_cheeseburger.png', 0],
     ['images/turkey_club.png', '6.00', 'Turkey Club', 1, 'images/edit_items/turkey_club.png', 0],
     ['images/grilled_cheese_tomato_3x.png', '4.00', 'Grilled Cheese with Tomato', 1, 'images/edit_items/grilled_cheese_tomato.png', 0],
     ['images/grilled_cheese_3x.png', '3.50', 'Grilled Cheese', 1, 'images/edit_items/grilled_cheese.png', 0],
     ['images/bacon_lettuce_tomato_3x.png', '5.00', 'Bacon Lettuce Tomato', 1, 'images/edit_items/bacon_lettuce_tomato.png', 0],
     ['images/hot_sausage.png', '7.00', 'Hot Sausage', 1, 'images/edit_items/hot_sausage.png', 0],
-    ['images/buffalo_cheesestake.png', '6.00', 'Buffalo Cheesesteak', 1, 'images/edit_items/buffalo_cheesesteak.png', 0],
+    ['images/buffalo_cheesestake.png', '6.00', 'Buffalo Cheesesteak', 1, 'images/edit_items/buffalo_cheesesteak.png', 1],
     ['images/ham_club.png', '6.00', 'Ham Club', 1, 'images/edit_items/ham_club.png', 0],
     ['images/grilled_chicken_hoagie.png', '7.50', 'Grilled Chicken Hoagie', 1, 'images/edit_items/grilled_chicken_hoagie.png', 0],
     ['images/lamb_gyro.png', '6.00', 'Lamb Gyro', 1, 'images/edit_items/lamb_gyro.png', 0],
     ['images/mushroom_cheesesteak.png', '7.00', 'Mushroom Cheesesteak', 1, 'images/edit_items/mushroom_cheesesteak.png', 0],
     ['images/hot_dog.png', '6.00', 'Hot Dog', 1, 'images/edit_items/hot_dog.png', 0],
-    ['images/thai_tea_3x.png', '2.50', 'Thai Tea', 3, 'images/edit_items/thai_tea.png', 0],
+    ['images/thai_tea_3x.png', '2.50', 'Thai Tea', 3, 'images/edit_items/thai_tea.png', 1],
     ['images/hot_coffee_3x.png', '2.50', 'Hot Coffee', 3, 'images/edit_items/hot_coffee.png', 0],
     ['images/tea_3x.png', '2.50', 'Tea', 3, 'images/edit_items/tea.png', 0],
     ['images/hot_chocolate_3x.png', '2.50', 'Hot Chocolate', 3, 'images/edit_items/hot_chocolate.png', 0],
