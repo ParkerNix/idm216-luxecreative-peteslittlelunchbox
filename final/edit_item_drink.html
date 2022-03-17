@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalizer.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edit Item | Pete's Little Lunch Box</title>
+</head>
+
+<body style="background-color: #FFFFFF;">
+
+
+    <div class="navnhb">
+        <img class="back" src="images/back-arrow.png" alt="back" onclick="history.back()" style="width: 10px;">
+        <h2 style="padding: 0;">Edit Item</h2>
+        <a href="emptycart.html"><img src="images/cart_lunchbox_menu_item_3x.png" alt="cart" style="width: 30px;"></a>
+    </div>
+
+<div class="econtainer">
+<div class="edit-item-container">
+
+    <div class="menu-item-img" id="itemimg">
+        <img src="images/cheesestake_edit_item_2x.png" alt="cheesestake">
+    </div>
+
+<div class="editwrap">
+    <div class="menu-item-description">
+        <h1 id="itemname">Cheesesteak</h1>
+        <p id="itemdesc">Thinly sliced beef on a bread of your choice topped with cheese.</p>
+    </div>
+
+    <div class="filter">
+        <div class="quantity-dropdown">
+        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 16px;">Quantity</h4>
+            <div class="itembuttons custom-select">
+              <select name="qty" class="qty">
+                <option value="0">1</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+        </div>
+        <a href="edit_item.html">CLEAR SELECTED</a>
+    </div>
+    <div class="additional-notes">
+        <h3>Additional Notes</h3>
+    </div>
+
+    <div class="additional-notes-box">
+        <textarea id="additional-notes" name="additional-notes" rows="5" cols="38"></textarea>
+    </div>
+
+    <div class="add-to-cart">
+        <a href="menu.html" class="redhover">
+        <button class="add-to-cart redhover" id="addtocart">ADD TO CART +$<span id="totalprice">6.00</span></button>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+    <script src="script/custom_dropdown.js"></script>
+    <script src="script/loaditem.js"></script>
+    <script src="script/item_custom.js"></script>
+</body>
+</html>
