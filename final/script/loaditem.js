@@ -11,11 +11,13 @@ console.log(yourarray);
 let updateimg = yourarray[0];
 let updateprice = yourarray[1];
 let updatetitle = yourarray[2];
-let updateedit = yourarray[4];
+let updateedit = yourarray[3];
 
 let textimg = "";
-textimg += "<img src='" + updateedit + "' alt='" + updatetitle + "'>"
+let textedit = "";
+textimg += "<img src='" + updateimg + "' alt='" + updatetitle + "'>";
+textedit += "<img src='" + updateedit + "' alt='" + updatetitle + "'>";
 
-yourimg.innerHTML = textimg;
+yourimg.innerHTML = textedit;
 yourtitle.innerHTML = updatetitle;
 yourprice.innerHTML = updateprice;

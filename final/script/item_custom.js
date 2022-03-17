@@ -23,23 +23,22 @@ function checkAddress()
 
         if (thing.checked == true)
         {
-            checktopping += thename + ", ";
+            checktopping += thename + " | ";
         }
     }
     
     let additionalNotes = document.getElementById("additional-notes");
     let value = additionalNotes.value;
     checktopping += value; 
-    let iteminfo = [textimg, updatetitle, updateprice]
+    let iteminfo = [textimg, textedit, updateimg, updateprice, updatetitle, updateedit]
     let iteminfostring = iteminfo.toString();
         // Check browser support
         if (typeof(Storage) !== "undefined") {
             // Store
             localStoragenum = localStorage.length;
-            let allitem = [iteminfostring, checktopping]
+            let allitem = [iteminfostring, checktopping];
             let allitemstring = allitem.toString();
-            infostring += "iteminfo" + localStoragenum;
-            localStorage.setItem("newitem", allitemstring);
+            localStorage["chosenitem" + localStoragenum] = allitemstring;
             }
 }
 

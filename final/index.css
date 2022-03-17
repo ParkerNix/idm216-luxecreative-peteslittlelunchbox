@@ -723,6 +723,8 @@ input.coupon_code {
 
 .cart {
     margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .cartitem {
