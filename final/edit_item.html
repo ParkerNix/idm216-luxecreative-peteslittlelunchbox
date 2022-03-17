@@ -10,7 +10,7 @@
     <title>Edit Item | Pete's Little Lunch Box</title>
 </head>
 
-<body style="background-color: #FFFFFF;">
+<body class="edit-item">
 
 
     <div class="navnhb">
@@ -22,6 +22,7 @@
 <div class="econtainer">
 <div class="edit-item-container">
 
+<div class="edesktop-flex">
     <div class="menu-item-img" id="itemimg">
         <img src="images/cheesestake_edit_item_2x.png" alt="cheesestake">
     </div>
@@ -30,7 +31,7 @@
     <div class="menu-item-description">
         <h1 id="itemname">Cheesesteak</h1>
         <p id="itemdesc">Thinly sliced beef on a bread of your choice topped with cheese.</p>
-    </div>
+    
 
     <div class="filter">
         <div class="quantity-dropdown">
@@ -45,51 +46,60 @@
             </select>
             </div>
         </div>
-        <a href="edit_item.html">CLEAR SELECTED</a>
+        <div class="clear"><a href="edit_item.html">CLEAR SELECTED</a></div>
     </div>
+</div>
+</div>
+</div>
 
     <div class="menu-item-list">
-        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1.2rem;">Bread</h4>
-        <div class="radio-buttons">
-            <label for="hoagie" class="container">Hoagie
-            <input type="radio" id="hoagie" name="bread" value="Hoagie" class="radbutton">
-            <span class="radiomark"></span>
-            </label><br>
-            <hr class="menu">
-            <label for="wrap" class="container">Wrap
-            <input type="radio" id="wrap" name="bread" value="Wrap" class="radbutton">
-            <span class="radiomark"></span>
-            </label><br>
-            <hr class="menu">
-            <label for="pita" class="container">Pita
-            <input type="radio" id="pita" name="bread" value="Pita" class="radbutton">
-            <span class="radiomark"></span>
-            </label><br>
-            <hr class="menu">
+
+        <div class="bread">
+            <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1.2rem;">Bread</h4>
+            <div class="radio-buttons">
+                <label for="hoagie" class="container">Hoagie
+                <input type="radio" id="hoagie" name="bread" value="Hoagie" class="radbutton">
+                <span class="radiomark"></span>
+                </label><br>
+                <hr class="menu">
+                <label for="wrap" class="container">Wrap
+                <input type="radio" id="wrap" name="bread" value="Wrap" class="radbutton">
+                <span class="radiomark"></span>
+                </label><br>
+                <hr class="menu">
+                <label for="pita" class="container">Pita
+                <input type="radio" id="pita" name="bread" value="Pita" class="radbutton">
+                <span class="radiomark"></span>
+                </label><br>
+                <hr class="menu">
+            </div>
         </div>
 
-        <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1.2rem;">Toppings</h4>
-        <div class="toppings-checklist">
-            <label for="salt" class="container">Salt
-            <input type="checkbox" id="salt" name="salt" value="Salt" class="checkbutton">
-            <span class="checkmark"></span>
-            </label><br>
-            <hr class="menu">
-            <label for="pepper" class="container">Pepper
-            <input type="checkbox" id="pepper" name="pepper" value="Pepper" class="checkbutton">
-            <span class="checkmark"></span>
-            </label><br>
-            <hr class="menu">
-            <label for="ketchup" class="container">Ketchup
-            <input type="checkbox" id="ketchup" name="ketchup" value="Ketchup" class="checkbutton">
-            <span class="checkmark"></span>
-            </label><br>
-            <hr class="menu">
-            <label for="onions" class="container">Onions
-            <input type="checkbox" id="onions" name="onions" value="Onions" class="checkbutton">
-            <span class="checkmark"></span>
-            </label><br>
+        <div class="toppings">
+            <h4 style="font-family:'Gilroy-ExtraBold'; font-size: 1.2rem;">Toppings</h4>
+            <div class="toppings-checklist">
+                <label for="salt" class="container">Salt
+                <input type="checkbox" id="salt" name="salt" value="Salt" class="checkbutton">
+                <span class="checkmark"></span>
+                </label><br>
+                <hr class="menu">
+                <label for="pepper" class="container">Pepper
+                <input type="checkbox" id="pepper" name="pepper" value="Pepper" class="checkbutton">
+                <span class="checkmark"></span>
+                </label><br>
+                <hr class="menu">
+                <label for="ketchup" class="container">Ketchup
+                <input type="checkbox" id="ketchup" name="ketchup" value="Ketchup" class="checkbutton">
+                <span class="checkmark"></span>
+                </label><br>
+                <hr class="menu">
+                <label for="onions" class="container">Onions
+                <input type="checkbox" id="onions" name="onions" value="Onions" class="checkbutton">
+                <span class="checkmark"></span>
+                </label><br>
+            </div>
         </div>
+
     </div>
 
     <div class="additional-notes">
