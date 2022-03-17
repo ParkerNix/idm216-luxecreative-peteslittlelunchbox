@@ -1,5 +1,5 @@
 let categories = ['breakfast', 'lunch', 'sides', 'drinks'];
-
+let where = ['nothing', 'favs'];
 
 let foods = [
     ['images/bacon_egg_cheese.png', '6.00', 'Bacon Egg and Cheese', 0, 'images/edit_items/bacon_egg_cheese.png', 0],
