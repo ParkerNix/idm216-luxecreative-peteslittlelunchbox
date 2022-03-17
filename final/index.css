@@ -1896,7 +1896,7 @@ padding-bottom: 2rem;
 
 
 button.details, button.issue {
-    background-color: #FF746B;
+    background-color: #FF645A;
     font-family: 'Gilroy-Bold';
     color: #FFFFFF;
     font-weight: 100;
@@ -1927,6 +1927,10 @@ h4#issue {
 h1.thanks {
     margin-top: -0.2rem;
     font-size:30px;
+}
+
+img.tracker {
+    width: 300px;
 }
 
 @media screen and (min-width: 750px) {
@@ -1977,7 +1981,7 @@ h1.thanks {
     }
 
     button.details, button.issue {
-        background-color: #FF746B;
+        background-color: #FF645A;
         font-family: 'Gilroy-Bold';
         color: #FFFFFF;
         font-weight: 100;
@@ -1986,6 +1990,44 @@ h1.thanks {
         border: none;
         padding: 0.9rem 1rem;
         cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    .tdesktop-flex {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+    img.tracker {
+        width: 430px
+    }
+
+    .tracking-text {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        flex-direction: column;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0px 2px 2px #41275215;
+    }
+
+    h4#issue {
+        margin: 0;
+        padding-bottom: 1rem;
     }
 
 }
