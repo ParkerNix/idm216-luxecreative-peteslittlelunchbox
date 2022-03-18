@@ -46,3 +46,6 @@ function checkAddress()
 
 addtocart.addEventListener( "mousedown", function() {checkAddress();
 }, false);
+
+
+

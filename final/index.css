@@ -284,6 +284,21 @@ button.checkout:active, button.redhover:active {
     left: -30px;
 }
 
+span.cart-counter {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ffffff;
+    background-color: #FF645A;
+    height: 22px;
+    width: 22px;
+    padding-left: 0.55rem;
+    padding-top: 0.3rem;
+    border-radius: 100px;
+    font-family: 'Gilroy-Medium';
+    font-size: 0.8rem;
+}
+
 
 .nav {
     display:flex;
