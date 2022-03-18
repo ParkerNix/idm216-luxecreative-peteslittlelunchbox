@@ -1,3 +1,8 @@
+
+let orderdetails = document.getElementById("orderdetails");
+if (localStorage.getItem("orderdetailstext")) {
+    orderdetails.innerHTML = localStorage.getItem("orderdetailstext");
+} else {
 let pickuptimedoc = document.getElementById("pickuptime");
 let cart = document.getElementById("cart");
 let totaldoc = document.getElementById("total");
@@ -29,13 +34,19 @@ for (i=0; i<itembuttonsdoc.length; i++) {
     thisitembutton.innerHTML = '<p class="qty2">1</p>';
     thisitembutton.classList.add("detailsqty");
 }
-
-let orderagain = document.getElementById("orderagain");
+}
 
 function clearthemind() {
     localStorage.clear();
 }
 
-orderagain.addEventListener('mouseup', function() {clearthemind()});
+clearthemind();
 
+
+function setorderdetails() {
+    orderdetailstext = orderdetails.innerHTML;
+    localStorage.setItem("orderdetailstext", orderdetailstext);
+}
+
+setorderdetails()
 

@@ -9,4 +9,5 @@ function getOption() {
 
 localStorage.removeItem("moneystring");
 localStorage.removeItem("carttext");
+localStorage.removeItem("orderdetailstext");
 document.getElementById('start').addEventListener('mouseup', function() {getOption()});
