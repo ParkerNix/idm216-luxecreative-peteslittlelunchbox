@@ -1812,10 +1812,17 @@ button.add-to-cart {
     font-family: 'Gilroy';
 }
 
+.menu-item-list {
+    margin: 0 2rem;
+}
+
 
 
 
 @media screen and (min-width: 750px) {
+    .menu-item-list {
+        margin: 0;
+    }
 
     .econtainer {
         padding-top: 2rem;
