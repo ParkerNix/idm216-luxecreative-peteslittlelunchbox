@@ -41,16 +41,18 @@
         
         <div class="time-dropdown">
               <select name="time" class="time">
-                  <option value="10:15">10:15</option>
-                  <option value="10:30">10:30</option>
-                  <option value="10:45">10:45</option>
-                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="12:15">12:15</option>
+                  <option value="12:30">12:30</option>
+                  <option value="12:45">12:45</option>
+                  <option value="1:00">1:00</option>
               </select>
           </div>
          </div>
         
         <div class="start-order">
-          <button onclick="getOption()" class="redhover2"><h4>CONFIRM</h4></button>
+          <button onclick="getOption()" class="redhover2" id="start"><h4>CONFIRM</h4></button>
         </div>
         
       </div>
@@ -66,9 +68,9 @@
             <h1 class="card-text info-text">PICKUP INFO</h1>
             <img class="checkout-lunchbox" src="images/checkout_lunchbox.svg" alt="checkout-lunchbox">
             <div class="pickup-card-text">
-            <h5 class="card-text pickup-total" style="font-family:'Gilroy-Bold'; font-size: 1rem;">TOTAL $6.00</h5>
+            <h5 class="card-text pickup-total" style="font-family:'Gilroy-Bold'; font-size: 1rem;">TOTAL $<span id="totalinfo">6.00</span></h5>
             <h5 class="card-text" style="font-size:0.875rem;">ESTIMATED PICKUP TIME</h5>
-            <h1 class="card-text pickup-time" style="font-size:2rem;">12:00PM</h1>
+            <h1 class="card-text pickup-time" style="font-size:2rem;"><span id="pickuptime">12:00</span>PM</h1>
             <h1 class="card-text"><span class="output"></span></h1>
             <h5 class="card-text pickup-date" style="font-family:'Gilroy'; font-size: 0.875rem; margin-bottom: 1rem;">10/27/21</h5>
             <h5 class="card-text pickup-edit" id="modal-switch" style="font-family:'Gilroy-ExtraBold'; text-decoration: underline;  margin-bottom: 2rem;">EDIT PICKUP TIME:<img style="padding-left:0.3rem; width: 20px;" src="images/edit.svg" alt="edit"></h5>
@@ -98,7 +100,8 @@
     </div>
 </div>
 
+<script src="script/total.js"></script>
 <script src="script/checkout_modal.js"></script>
-<script src="script/change_pickup_time.js"></script>
+<script src="script/change_pickup_time_chekout.js"></script>
 </body>
 </html>

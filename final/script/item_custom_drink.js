@@ -11,22 +11,7 @@ let options = [hoagie, pita, wrap, ketchup, salt, pepper, onions];
 
 function checkAddress()
 {
-    checktopping = "";
-    for (let i = 0; i < options.length; i++) {
-        let thing = options[i];
-        let thisthing = [...thing.attributes];
-        const attrs = thisthing.reduce((attrs, attribute) => {
-          attrs[attribute.name] = attribute.value;
-          return attrs;
-        }, {});
-        let thename = attrs.value;
-
-        if (thing.checked == true)
-        {
-            checktopping += thename + " | ";
-        }
-    }
-    
+    let checktopping = "";
     let additionalNotes = document.getElementById("additional-notes");
     let value = additionalNotes.value;
     checktopping += value; 

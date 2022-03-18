@@ -2,30 +2,30 @@ let categories = ['breakfast', 'lunch', 'sides', 'drinks'];
 let where = ['nothing', 'favs'];
 
 let foods = [
-    ['images/bacon_egg_cheese.png', '6.00', 'Bacon Egg and Cheese', 0, 'images/edit_items/bacon_egg_cheese.png', 0],
-    ['images/bacon_egg_cheese_hashbrown.png', '6.00', 'Bacon Egg and Cheese with Hashbrown', 0, 'images/edit_items/bacon_egg_cheese_hashbrown.png', 1],
-    ['images/steak_egg_cheese.png', '7.00', 'Steak Egg and Cheese', 0, 'images/edit_items/steak_egg_cheese.png', 0],
+    ['images/bacon_egg_cheese_3x.png', '6.00', 'Bacon Egg and Cheese', 0, 'images/edit_items/bacon_egg_cheese.png', 1],
+    ['images/bacon_egg_cheese_with_hashbrown_3x.png', '6.00', 'Bacon Egg and Cheese with Hashbrown', 0, 'images/edit_items/bacon_egg_cheese_hashbrown.png', 1],
+    ['images/steak_egg_cheese_3x.png', '7.00', 'Steak Egg and Cheese', 0, 'images/edit_items/steak_egg_cheese.png', 0],
     ['images/ham_egg_cheese_3x.png', '5.00', 'Ham Egg and Cheese', 0, 'images/edit_items/ham_egg_cheese.png', 0],
-    ['images/egg_scrapple.png', '5.00', 'Egg Scrapple', 0, 'images/edit_items/egg_scrapple.png', 0],
+    ['images/egg_scrapple_3x.png', '5.00', 'Egg Scrapple', 0, 'images/edit_items/egg_scrapple.png', 0],
     ['images/scrapple_egg_cheese_3x.png', '5.00', 'Scrapple Egg and Cheese', 0, 'images/edit_items/scrapple_egg_cheese.png', 0],
     ['images/egg_cheese_3x.png', '4.00', 'Egg and Cheese', 0, 'images/edit_items/egg_cheese.png', 0],
     ['images/sausage_egg_cheese_3x.png', '5.00', 'Sausage Egg and Cheese', 0, 'images/edit_items/sausage_egg_cheese.png', 0],
     ['images/porkroll_egg_cheese_3x.png', '5.00', 'Pork Roll Egg and Cheese', 0, 'images/edit_items/porkroll_egg_cheese.png', 0],
     ['images/hot_sausage_egg_cheese_3x.png', '6.00', 'Hot Sausage Egg and Cheese', 0, 'images/edit_items/hot_sausage_egg_cheese.png', 0],
-    ['images/cheesesteak.png', '6.00', 'Cheesesteak', 1, 'images/edit_items/cheesesteak.png', 1],
-    ['images/bacon_cheeseburger.png', '5.00', 'Bacon Cheeseburger', 1, 'images/edit_items/bacon_cheeseburger.png', 0],
-    ['images/turkey_club.png', '6.00', 'Turkey Club', 1, 'images/edit_items/turkey_club.png', 0],
+    ['images/plain_cheesesteak_3x.png', '6.00', 'Cheesesteak', 1, 'images/edit_items/cheesesteak.png', 1],
+    ['images/bacon_cheeseburger_3x.png', '5.00', 'Bacon Cheeseburger', 1, 'images/edit_items/bacon_cheeseburger.png', 0],
+    ['images/turkey_club_3x.png', '6.00', 'Turkey Club', 1, 'images/edit_items/turkey_club.png', 0],
     ['images/grilled_cheese_tomato_3x.png', '4.00', 'Grilled Cheese with Tomato', 1, 'images/edit_items/grilled_cheese_tomato.png', 0],
     ['images/grilled_cheese_3x.png', '3.50', 'Grilled Cheese', 1, 'images/edit_items/grilled_cheese.png', 0],
     ['images/bacon_lettuce_tomato_3x.png', '5.00', 'Bacon Lettuce Tomato', 1, 'images/edit_items/bacon_lettuce_tomato.png', 0],
-    ['images/hot_sausage.png', '7.00', 'Hot Sausage', 1, 'images/edit_items/hot_sausage.png', 0],
+    ['images/hot_sausage_3x.png', '7.00', 'Hot Sausage', 1, 'images/edit_items/hot_sausage.png', 0],
     ['images/buffalo_cheesestake.png', '6.00', 'Buffalo Cheesesteak', 1, 'images/edit_items/buffalo_cheesesteak.png', 1],
-    ['images/ham_club.png', '6.00', 'Ham Club', 1, 'images/edit_items/ham_club.png', 0],
-    ['images/grilled_chicken_hoagie.png', '7.50', 'Grilled Chicken Hoagie', 1, 'images/edit_items/grilled_chicken_hoagie.png', 0],
-    ['images/lamb_gyro.png', '6.00', 'Lamb Gyro', 1, 'images/edit_items/lamb_gyro.png', 0],
-    ['images/mushroom_cheesesteak.png', '7.00', 'Mushroom Cheesesteak', 1, 'images/edit_items/mushroom_cheesesteak.png', 0],
-    ['images/hot_dog.png', '6.00', 'Hot Dog', 1, 'images/edit_items/hot_dog.png', 0],
-    ['images/thai_tea_3x.png', '2.50', 'Thai Tea', 3, 'images/edit_items/thai_tea.png', 1],
+    ['images/ham_club_3x.png', '6.00', 'Ham Club', 1, 'images/edit_items/ham_club.png', 0],
+    ['images/grilled_chicken_hoagie_3x.png', '7.50', 'Grilled Chicken Hoagie', 1, 'images/edit_items/grilled_chicken_hoagie.png', 0],
+    ['images/lamb_gyro_3x.png', '6.00', 'Lamb Gyro', 1, 'images/edit_items/lamb_gyro.png', 0],
+    ['images/mushroom_cheesestake_3x.png', '7.00', 'Mushroom Cheesesteak', 1, 'images/edit_items/mushroom_cheesesteak.png', 0],
+    ['images/hot_dog_3x.png', '6.00', 'Hot Dog', 1, 'images/edit_items/hot_dog.png', 0],
+    ['images/thai_tea_3x.png', '2.50', 'Thai Tea', 3, 'images/edit_items/thai_tea.png', 0],
     ['images/hot_coffee_3x.png', '2.50', 'Hot Coffee', 3, 'images/edit_items/hot_coffee.png', 0],
     ['images/tea_3x.png', '2.50', 'Tea', 3, 'images/edit_items/tea.png', 0],
     ['images/hot_chocolate_3x.png', '2.50', 'Hot Chocolate', 3, 'images/edit_items/hot_chocolate.png', 0],
@@ -66,7 +66,7 @@ for (let i = 0; i < foods.length; i++) {
         textlunch += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"><svg class="a-icon__asset" viewBox="0 0 24.3 22.5"><use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use><use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
     if (foodCat == 'drinks') {
-        textdrinks += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
+        textdrinks += '<div class="menuitem" id = ' + i + '> <span class="a-icon a-icon--heart js-heart"> <svg class="a-icon__asset" viewBox="0 0 24.3 22.5"> <use class="a-icon--heart__fill" xlink:href="#u-heart-fill" xmlns:xlink="http://www.w3.org/1999/xlink"></use> <use class="a-icon--heart__stroke" xlink:href="#u-heart-stroke" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg> </span> <a href="edit_item_drink.html" class="imgprice"> <span class="pricetag">$' + foodPrice + '</span> <img src="' +  foodImage + '" alt="' + foodName + '"> <h3>' + foodName + '</h3> </a> </div>';
         }
 }
 

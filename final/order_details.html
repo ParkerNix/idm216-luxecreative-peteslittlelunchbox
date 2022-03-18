@@ -35,7 +35,7 @@
       <div class="nav">
         <span style="width: 10px;"></span>
         <h2>Review Order</h2>
-        <a href="emptycart.html"><img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon"></a>
+        <a href="cart.html"><img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon"></a>
     </div>
 
     <div class="ocontainer">
@@ -46,13 +46,13 @@
     <div class="order-info">
     <div class="orderdetails">
         <h1>JOHN DOE</h1>
-        <p>PICK UP TIME:</p>
-        <p>OCTOBER 27, 2021 AT 12:00 PM</p>
+        <p>PICK UP TIME: <span id="pickuptime">12:00</span> PM</p>
+        <p>OCTOBER 27, 2021 AT 11:45PM</p>
     </div>
 
     <hr class="menu2">
 
-    <div class="cart">
+    <div class="cart" id="cart">
         <div class="cartitem2">
             <div class="itemimg">
                 <img src="images/cart_cheesestake_2x.png" alt="cheesestake">
@@ -86,16 +86,16 @@
             <h3>Total</h3>
         </div>
         <div class="price2">
-            <h3>$6.00</h3>
-            <h3>+$0.00</h3>
-            <h3>$6.00</h3>
+            <h3>$<span id="subtotal">6.00</span></h3>
+            <h3>+$<span id="tip">0.00</span></h3>
+            <h3>$<span id="total">6.00</span></h3>
         </div>
         </div>
 
     
     <div class="cobutton">
         <a href="menu.html">
-        <button class="redhover">ORDER AGAIN</button>
+        <button class="redhover" id="orderagain">ORDER AGAIN</button>
         </a>
     </div>
     </div>
@@ -104,6 +104,6 @@
 
 </div>
 </div>
-    <script src="script/items.js"></script>
+    <script src="script/afteritems.js"></script>
 </body>
 </html>

@@ -13,6 +13,9 @@ let total = 0 + subtotal;
 let totalstring = total.toFixed(2);
 totaldoc.innerHTML = totalstring;
 
+let tip = 0;
+let tipstring = tip.toFixed(2);
+
 function turnOn(tipon) {
     if (tipon.className == "tip") {
         tipOne.className = 'tip';
@@ -59,6 +62,21 @@ tipTwo.addEventListener('click', function () {turnOn(tipTwo);});
 tipThree.addEventListener('click', function () {turnOn(tipThree);});
 
 
+let checkoutbutton = document.getElementById("cobutton");
+
+function prepareforliftoff() {
+  console.log('stop');
+    let carttext = cart.innerHTML;
+    let moneyarray = [subtotaldoc.innerHTML, tipdoc.innerHTML, totaldoc.innerHTML];
+    let moneystring = moneyarray.toString();
+    localStorage.setItem("moneystring", moneystring);
+    localStorage.setItem("carttext", carttext);
+    if (pickuptimecart !== "") {
+      localStorage.setItem("pickuptime", pickuptimecart);
+      }
+}
+
+checkoutbutton.addEventListener("mouseup", function() {prepareforliftoff()}, false);
 
 
 

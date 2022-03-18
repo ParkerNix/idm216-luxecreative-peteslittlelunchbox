@@ -7,6 +7,4 @@ function getOption() {
     document.getElementById('pickuptime').innerHTML = output;
 }
 
-localStorage.removeItem("moneystring");
-localStorage.removeItem("carttext");
 document.getElementById('start').addEventListener('mouseup', function() {getOption()});
