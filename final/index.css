@@ -717,9 +717,92 @@ input.coupon_code {
     display: none;
   }
 
+
+
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+
+
+
+
+
+  /* CUSTOM SELECT FOR MENU */
+
+  .custom-select-two {
+    width: 43.5px;
+    position: relative;
+    border-radius: 5px;
+    background-color: none;
+    color: #4B5079;
+    font-family: "Gilroy-Bold";
+    border: none;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-select-two select {
+    display: none;
+}
+
+.select-selected-two {
+    background-color: #E9F2FF;
+    border-radius: 10px;
+    width: 90px;
+  }
+
+  .select-selected-two:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 70px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-color: #4B5079 transparent transparent transparent;
+    border-radius: 2px;
+  }
+
+  .select-selected-two.select-arrow-active-two:after {
+    border-color: transparent transparent #4B5079 transparent;
+    top: 12px;
+  }
+
+  .select-items-two div,.select-selected-two {
+    color: #4B5079;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-items-two {
+    position: absolute;
+    background-color: #E9F2FF;
+    top: 33px;
+    left: -1px;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+  .select-hide-two {
+    display: none;
+  }
+
+
+
+  .select-items-two div:hover, .same-as-selected-two {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+
+
 
 .itemimg img {
     width: 100px;
@@ -2260,7 +2343,8 @@ img.tracker {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
+    margin-left: 4rem;
   }
   
   select.day, select.time {
