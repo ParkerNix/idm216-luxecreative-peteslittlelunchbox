@@ -722,7 +722,7 @@ input.coupon_code {
   }
 
 .itemimg img {
-    width: 100%;
+    width: 100px;
     height: 100px;
     object-fit: cover;
     object-position: 30% 10%;
@@ -734,7 +734,7 @@ input.coupon_code {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 2rem 0 .5rem;
+    padding: 2rem 0 0rem;
     overflow: scroll;
     margin: 0 2rem;
 
@@ -827,7 +827,11 @@ button.checkout {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin-left: .45rem;
 
+}
+.cartitem img {
+    width: 100px;
 }
 
 
@@ -835,13 +839,8 @@ button.checkout {
 /* Cart Payment Query */
 
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 500px) {
 
-.cartitem img {
-    width: 80%;
-    height: 100%;
-    max-height: 150px;
-}
 
 .cart {
     display: flex;
@@ -860,7 +859,7 @@ button.checkout {
 }
 
 .addons {
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .tips {
@@ -903,13 +902,19 @@ button.tip{
 
 }
 
+@media screen and (min-width: 750px){
+    .addons {
+        max-width: 450px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
 
 
     .cdesktop-flex {
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         gap: 1rem;
     }
 
@@ -1044,7 +1049,7 @@ hr.menu3 {
     justify-content: right;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1070px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
 
     .order-details-container {
         width: 50%
@@ -1068,7 +1073,7 @@ hr.menu3 {
 
 }
 
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1000px) {
 
     .ocontainer {
         padding-top: 5rem;
@@ -1380,7 +1385,7 @@ b.login {
 
 
 
-/* Track Order */
+/* Pick Up Info */
 
 
 h2.nav {
@@ -1401,15 +1406,34 @@ h2.nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 19.25rem;
-    height: 23rem;
+    width: 21rem;
+    height: 29rem;
     padding-top: 1.5rem;
     box-shadow: 0px 4px 10px #41275215;
 }
 
+h5.card-text {
+    padding-bottom: .5rem;
+
+}
 img.checkout-lunchbox {
     width: 3.813rem;
     padding: 1.5rem 0;
+}
+.info-text {
+    margin: 1rem 0 0 0;
+    font-size: 20px;
+}
+
+.pickup-total, .pickup-edit {
+    border-style: none none solid none;
+    border-color: #EDF0F4;
+    border-width: 0 0 2px 0;
+}
+
+
+h5.pickup-edit, h5.pickup-total{
+    padding-bottom: 1rem;
 }
 
 .pickup-card-text {
@@ -1418,11 +1442,7 @@ img.checkout-lunchbox {
 }
 
 .pickup-card-text .card-text {
-    margin-top: -0.8rem;
-}
-
-.card-text {
-    padding: 0;
+    margin-top: -.7rem;
 }
 
 .paymenthead {
@@ -1498,15 +1518,18 @@ h5#modal-switch:hover {
     }
 
     h5.card-text {
-        font-size: 1.263rem;
+        font-size: 1rem;
     }
 
     h4.card-text {
         font-size: 1.026rem;
     }
 
-    h1.card-text {
+    .pickup-time {
         font-size: 2.5rem;
+    }
+    .info-text {
+        font-size: 30px;
     }
 
     .pickup-card {
@@ -1516,7 +1539,7 @@ h5#modal-switch:hover {
         align-items: center;
         flex-direction: column;
         width: 24.313rem;
-        height: 30.233rem;
+        height: 32rem;
         box-shadow: 0px 4px 10px #41275215;
     }
 
@@ -1527,7 +1550,6 @@ h5#modal-switch:hover {
 
     img.checkout-lunchbox {
         width: 5rem;
-        margin-top: 2.5rem;
         padding: 1.5rem 0;
     }
 
@@ -1564,6 +1586,11 @@ h5#modal-switch:hover {
         justify-content: center;
         margin-left: 3rem;
         
+    }
+    button.checkout {
+        float: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
     }
 
 }
@@ -1812,7 +1839,7 @@ button.add-to-cart {
     font-family: 'Gilroy';
 }
 
-.menu-item-list {
+.menu-item-list, .notes-group {
     margin: 0 2rem;
 }
 
