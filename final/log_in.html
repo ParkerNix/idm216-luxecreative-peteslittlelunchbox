@@ -15,12 +15,13 @@
         <!-- <i class="fa fa-bars" style="font-size:30px;color:#4B5079"></i> -->
         <img class="back" src="images/back-arrow.png" alt="back" onclick="history.back()" style="width: 10px;">
         <h2 style="padding: 0;"></h2>
-        <a href="cart.html"><img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon"></a>
+        <a href="cart.html"><img class="cart_icon" src="images/cart_lunchbox_menu_item_3x.png" alt="cart_icon">
+            <span class="cart-counter"></span></a>
     </div>
 
 <div class="logincontainer">
 
-  
+    <form>
     <div class="loginform">
         <h4 class="petes">PETE'S LITTLE LUNCH BOX</h4>
         <h2 class="welcome">WELCOME!</h2>
@@ -32,21 +33,19 @@
         <a href="#" class="psw">Forgot password</a>
 
         <button id="loginbutton" class="redhover" type="submit"><a href="checkout_info.html">LOGIN</a></button>
-
+ 
 
         <p class="loginlink">Don't have an account?<a href="">Sign Up</a></p>
 
     </div>
-
+</form>
         <div class="login-lunchbox">
             <img src="images/login-lunchbox.svg" alt="login-lunchbox">
         </div>
-     
-
 </div>
 
 
-
+<script src="script/cart_counter.js"></script>
 
 </body>
 </html>

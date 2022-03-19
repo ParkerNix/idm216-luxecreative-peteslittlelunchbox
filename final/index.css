@@ -289,7 +289,7 @@ span.cart-counter {
     right: 20px;
     top: 20px;
     color: #ffffff;
-    background-color: #FF645A;
+    background-color: none;
     height: 22px;
     width: 22px;
     padding-left: 0.55rem;
@@ -316,6 +316,10 @@ span.cart-counter {
     flex-direction: row;
     align-items: center;
     width: 100%;
+}
+
+.red {
+    background-color: #E85454;
 }
 
 .nav h2 {
