@@ -1132,7 +1132,7 @@ hr.menu3 {
     justify-content: right;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 950px) {
 
     .order-details-container {
         width: 50%
@@ -1156,7 +1156,7 @@ hr.menu3 {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
 
     .ocontainer {
         padding-top: 5rem;
